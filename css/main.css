@@ -9,6 +9,8 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+
 
 html {
     color: #222;
@@ -97,35 +99,116 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+nav {
+    display: grid;
+    padding: 1vw;
+    grid-gap: 2vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    background-color: rgb(130, 159, 206);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 5px 0 black;
+}
+
+nav a {
+    text-align: center;
+    font-family: monospace;
+    border: #000 4px solid;
+    padding: 10px;
+    text-decoration: none;
+    color: black;
+    font-size: calc(16px + 1vw);
+    font-family: 'Share Tech Mono',
+        monospace;
+    box-shadow: 5px 5px 0 black;
+    background-color: rgb(255, 255, 255);
+}
+
+nav a:hover {
+    font-family: 'Share Tech Mono',
+        monospace;
+    border: rgb(130, 159, 206) 4px solid;
+    background-color: black;
+    padding: 10px;
+    color: white;
+}
+
+article {
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: monospace;
+    border: #000 4px solid;
+    padding: 10px;
+    color: black;
+    font-size: calc(16px + .25vw);
+    box-shadow: 5px 5px 0 black;
+    background-color: white;
+}
+
+h1 {
+    font-family: monospace;
+    border: #000 4px solid;
+    padding: 10px;
+    color: black;
+    font-size: calc(16px + 1vw);
+    font-family: 'Share Tech Mono',
+        monospace;
+    box-shadow: 5px 5px 0 black;
+    background-color: rgb(130, 159, 206);
+}
+
+h2 {
+    font-family: monospace;
+    border: #000 4px solid;
+    padding: 6px;
+    color: white;
+    font-size: calc(16px + .5vw);
+    font-family: 'Share Tech Mono',
+        monospace;
+    box-shadow: 5px 5px 0 black;
+    background-color: rgb(76, 80, 85);
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.maingrid {
+    margin-top: -1.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vw;
+}
 
 
+@media only screen and (max-width: 1200px) {
+    nav {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .maingrid {
+        margin-top: -1.6vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1vw;
+    }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
+    /* ==========================================================================
    Helper classes
    ========================================================================== */
 
-/*
+    /*
  * Hide visually and from screen readers
  */
 
-.hidden {
-    display: none !important;
-}
+    .hidden {
+        display: none !important;
+    }
 
-/*
+    /*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -134,44 +217,45 @@ textarea {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
-}
+    .visuallyhidden {
+        border: 0;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+        white-space: nowrap;
+        /* 1 */
+    }
 
-/*
+    /*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
-}
+    .visuallyhidden.focusable:active,
+    .visuallyhidden.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+        white-space: inherit;
+    }
 
-/*
+    /*
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
-    visibility: hidden;
-}
+    .invisible {
+        visibility: hidden;
+    }
 
-/*
+    /*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -183,105 +267,110 @@ textarea {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
 
-.clearfix:after {
-    clear: both;
-}
+    .clearfix:after {
+        clear: both;
+    }
 
-/* ==========================================================================
+    /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+    @media only screen and (min-width: 35em) {
+        /* Style adjustments for viewports that meet the condition */
+    }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
-}
+    @media print,
+    (-webkit-min-device-pixel-ratio: 1.25),
+    (min-resolution: 1.25dppx),
+    (min-resolution: 120dpi) {
+        /* Style adjustments for high resolution devices */
+    }
 
-/* ==========================================================================
+    /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster */
-        -webkit-box-shadow: none !important;
-        box-shadow: none !important;
-        text-shadow: none !important;
-    }
+    @media print {
 
-    a,
-    a:visited {
-        text-decoration: underline;
-    }
+        *,
+        *:before,
+        *:after {
+            background: transparent !important;
+            color: #000 !important;
+            /* Black prints faster */
+            -webkit-box-shadow: none !important;
+            box-shadow: none !important;
+            text-shadow: none !important;
+        }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
-    }
+        a,
+        a:visited {
+            text-decoration: underline;
+        }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
-    }
+        a[href]:after {
+            content: " ("attr(href) ")";
+        }
 
-    /*
+        abbr[title]:after {
+            content: " ("attr(title) ")";
+        }
+
+        /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
-    }
+        a[href^="#"]:after,
+        a[href^="javascript:"]:after {
+            content: "";
+        }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
-    }
+        pre {
+            white-space: pre-wrap !important;
+        }
 
-    /*
+        pre,
+        blockquote {
+            border: 1px solid #999;
+            page-break-inside: avoid;
+        }
+
+        /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-    thead {
-        display: table-header-group;
-    }
+        thead {
+            display: table-header-group;
+        }
 
-    tr,
-    img {
-        page-break-inside: avoid;
-    }
+        tr,
+        img {
+            page-break-inside: avoid;
+        }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
-    }
+        p,
+        h2,
+        h3 {
+            orphans: 3;
+            widows: 3;
+        }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
+        h2,
+        h3 {
+            page-break-after: avoid;
+        }
     }
-}
