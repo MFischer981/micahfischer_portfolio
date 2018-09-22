@@ -9,7 +9,10 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@import url('https://fonts.googleapis.com/css?family=Share+Tech+Mono');
+@import url('https://fonts.googleapis.com/css?family=Lato:900');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+
 
 
 html {
@@ -99,116 +102,420 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* Circle Animation, used rounded blocks for circle elements. Solid black background. Animation refering to @keyframe.*/
+.circles {
+    position: absolute;
+    display: block;
+    border-radius: 1000px;
+    height: 20vw;
+    width: 20vw;
+   background-color: #000;
+    top: 16vw;
+    left: 4vw;
+}
+
+.gear {
+    position: absolute;
+    display: block;
+    border-radius: 1000px;
+    height: 10vw;
+    width: 10vw;
+    background-size: cover;
+   background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-gear-512.png");
+    top: 27vw;
+    left: 9vw;
+    animation: circle 2s infinite;
+    filter: invert(100%);
+    z-index: 30;
+}
+
+@keyframes circle {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg)
+    }
+}
+
+#secondgear {
+    height: 20vw;
+    width: 20vw;
+    top: 16vw;
+    left: -4vw;
+    filter: invert(100%);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: block;
+    height: 30vw;
+    width: 65%;
+    margin: calc(30px + 10vw) 8vw 4vw 8vw;
+    background: rgb(105, 17, 247);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6911f7', endColorstr='#05abe0', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+}
+
 nav {
     display: grid;
-    padding: 1vw;
     grid-gap: 2vw;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    background-color: rgb(130, 159, 206);
-    position: sticky;
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(16px + .6vw);
+    padding: 1vw;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    width: 98%;
     top: 0;
-    box-shadow: 0 5px 0 black;
+    z-index: 100;
 }
 
 nav a {
+    display: block;
+    padding: 1vw;
     text-align: center;
-    font-family: monospace;
-    border: #000 4px solid;
-    padding: 10px;
+    outline: .5px white solid;
+    color: white;
     text-decoration: none;
-    color: black;
-    font-size: calc(16px + 1vw);
-    font-family: 'Share Tech Mono',
-        monospace;
-    box-shadow: 5px 5px 0 black;
-    background-color: rgb(255, 255, 255);
+    transition: .2s;
+    text-shadow: 0 10px 20px black;
 }
 
 nav a:hover {
-    font-family: 'Share Tech Mono',
-        monospace;
-    border: rgb(130, 159, 206) 4px solid;
-    background-color: black;
-    padding: 10px;
+    padding: .75vw 1vw 1.25vw;
+    text-align: center;
+    outline: .5px white solid;
     color: white;
+    text-decoration: none;
+    background: rgb(255, 0, 132);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0084', endColorstr='#4d00e8', GradientType=1);
 }
 
-article {
-    max-width: 1200px;
-    margin: 0 auto;
-    font-family: monospace;
-    border: #000 4px solid;
-    padding: 10px;
-    color: black;
-    font-size: calc(16px + .25vw);
-    box-shadow: 5px 5px 0 black;
-    background-color: white;
-}
-
-h1 {
-    font-family: monospace;
-    border: #000 4px solid;
-    padding: 10px;
-    color: black;
-    font-size: calc(16px + 1vw);
-    font-family: 'Share Tech Mono',
-        monospace;
-    box-shadow: 5px 5px 0 black;
-    background-color: rgb(130, 159, 206);
-}
-
-h2 {
-    font-family: monospace;
-    border: #000 4px solid;
-    padding: 6px;
+nav span {
+    display: none;
+    padding: 1vw;
+    text-align: center;
+    border: .5px white solid;
     color: white;
-    font-size: calc(16px + .5vw);
-    font-family: 'Share Tech Mono',
-        monospace;
-    box-shadow: 5px 5px 0 black;
-    background-color: rgb(76, 80, 85);
+    text-decoration: none;
+    transition: .2s;
+    text-shadow: 0 10px 20px black;
 }
 
-p {
+nav span:hover {
+    padding: .75vw 1vw 1.25vw;
+    text-align: center;
+    border: .5px white solid;
+    color: white;
+    text-decoration: none;
+    background: rgb(255, 0, 132);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0084', endColorstr='#4d00e8', GradientType=1);
+}
+
+div.header h1 {
     font-family: 'Lato', sans-serif;
+    font-size: 16vw;
+    line-height: 14vw;
+    margin: -33vw 0 0 15vw;
+    color: white;
+    font-style: italic;
+    border-top: 3vw dotted white;
 }
 
-.maingrid {
-    margin-top: -1.6vw;
+section {
+    display: block;
+    min-height: 10vw;
+    max-height: 100%;
+    width: 60%;
+    margin: -20vw 8vw 4vw 8vw;
+    background: rgb(255, 0, 132);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0084', endColorstr='#4d00e8', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    float: right;
+
+}
+
+i {
+    float: left;
+    margin: 8vw 8vw 4vw 8vw;
+    font-size: calc(16px + 12vw);
+    color: rgb(77, 0, 232);
+    animation-name: icons;
+    animation-iteration-count: 1;
+    animation-duration: 1s;
+}
+
+button {
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0084', endColorstr='#4d00e8', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    box-shadow: 5px 5px 0 black;
+    border: 5px solid black;
+    padding: .5vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: .5vw 2vw -.5vw 2vw;
+    font-size: calc(16px + .4vw);
+    transition: .1s;
+}
+
+button:hover {
+    background: black;
+    box-shadow: 2px 2px 0 black;
+    border: 5px solid white;
+    padding: .5vw;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: .5vw 2vw -.5vw 2vw;
+    font-size: calc(16px + .4vw);
+}
+
+
+
+section h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 8vw);
+    line-height: calc(16px + 6vw);
+    margin: 2vw .5vw .5vw .5vw;
+    color: white;
+    font-style: italic;
+    border-top: .6vw solid white;
+    padding-top: .6vw;
+}
+
+section p strong {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 1vw);
+    line-height: calc(16px + 1vw);
+    margin: 0 .5vw .5vw 0;
+    color: white;
+    font-style: italic;
+    padding-top: .6vw;
+}
+
+
+section p {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(16px + .6vw);
+    margin: 1vw 2vw 0 2vw;
+    color: white;
+    font-style: italic;
+}
+
+.skilltable {
+    clear: both;
     display: grid;
+    grid-gap: 2vw;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 1vw;
+    margin: 4vw 8vw 4vw 8vw;
+}
+
+.skilltable div {
+    background: rgb(105, 17, 247);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(105, 17, 247, 1) 0%, rgba(5, 171, 224, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6911f7', endColorstr='#05abe0', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    min-height: 10vw;
+    max-height: 100%;
+    width: 100%;
+    transition: .2s;
+}
+
+.skilltable div:hover {
+    transform: scale(1.05);
+    filter: brightness(110%)
+}
+
+.skilltable div h1 {
+    font-family: 'Lato', sans-serif;
+    font-size: calc(16px + 3vw);
+    line-height: calc(16px + 2vw);
+    margin: 2vw 0 0 -.5vw;
+    color: white;
+    font-style: italic;
+    border-top: .6vw solid white;
+    padding-top: .6vw;
+}
+
+.skilltable div p {
+    font-family: 'Poppins', sans-serif;
+    font-size: calc(16px + .3vw);
+    margin: 2vw 2vw 0 2vw;
+    color: white;
+    font-style: italic;
 }
 
 
-@media only screen and (max-width: 1200px) {
-    nav {
-        grid-template-columns: 1fr 1fr 1fr;
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 150;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    font-family: 'Poppins', sans-serif;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    display: block;
+    padding: 1vw;
+    text-align: center;
+    text-decoration: none;
+    transition: .2s;
+    text-shadow: 0 10px 20px black;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    background: rgb(255, 0, 132);
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(255, 0, 132, 1) 0%, rgba(77, 0, 232, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0084', endColorstr='#4d00e8', GradientType=1);
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: relative;
+    top: -30px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border: none;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 800px) {
-    .maingrid {
-        margin-top: -1.6vw;
-        display: grid;
+    .skilltable {
         grid-template-columns: 1fr;
-        grid-gap: 1vw;
+        grid-gap: 4vw 2vw;
+        min-height: 10vw;
+        max-height: 100%;
+        float: right;
+    }
+
+    nav span {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    section {
+        display: block;
+        width: 100%;
+        margin: 8vw 0;
+    }
+
+    i {
+        margin: 2vw auto -4vw;
+        padding: 6vw 0;
+        text-align: center;
+        width: 100%;
+        background-color: rgb(77, 0, 232);
+        color: white;
+        animation: none;
+    }
+
+    .skilltable {
+        margin-top: -4vw;
+        margin-bottom: 8vw;
+    }
+
+    header {
+        width: 100%;
+        margin: inherit 0;
     }
 
 
-    /* ==========================================================================
+}
+
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
-    /*
+/*
  * Hide visually and from screen readers
  */
 
-    .hidden {
-        display: none !important;
-    }
+.hidden {
+    display: none !important;
+}
 
-    /*
+/*
  * Hide only visually, but have it available for screen readers:
  * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
  *
@@ -217,45 +524,45 @@ p {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-    .visuallyhidden {
-        border: 0;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        margin: -1px;
-        overflow: hidden;
-        padding: 0;
-        position: absolute;
-        width: 1px;
-        white-space: nowrap;
-        /* 1 */
-    }
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
 
-    /*
+/*
  * Extends the .visuallyhidden class to allow the element
  * to be focusable when navigated to via the keyboard:
  * https://www.drupal.org/node/897638
  */
 
-    .visuallyhidden.focusable:active,
-    .visuallyhidden.focusable:focus {
-        clip: auto;
-        height: auto;
-        margin: 0;
-        overflow: visible;
-        position: static;
-        width: auto;
-        white-space: inherit;
-    }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
 
-    /*
+/*
  * Hide visually and from screen readers, but maintain layout
  */
 
-    .invisible {
-        visibility: hidden;
-    }
+.invisible {
+    visibility: hidden;
+}
 
-    /*
+/*
  * Clearfix: contain floats
  *
  * For modern browsers
@@ -267,110 +574,110 @@ p {
  *    `:before` to contain the top-margins of child elements.
  */
 
-    .clearfix:before,
-    .clearfix:after {
-        content: " ";
-        /* 1 */
-        display: table;
-        /* 2 */
-    }
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
 
-    .clearfix:after {
-        clear: both;
-    }
+.clearfix:after {
+    clear: both;
+}
 
-    /* ==========================================================================
+/* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
 
-    @media only screen and (min-width: 35em) {
-        /* Style adjustments for viewports that meet the condition */
-    }
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
 
-    @media print,
-    (-webkit-min-device-pixel-ratio: 1.25),
-    (min-resolution: 1.25dppx),
-    (min-resolution: 120dpi) {
-        /* Style adjustments for high resolution devices */
-    }
+@media print,
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 1.25dppx),
+(min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
 
-    /* ==========================================================================
+/* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-    @media print {
+@media print {
 
-        *,
-        *:before,
-        *:after {
-            background: transparent !important;
-            color: #000 !important;
-            /* Black prints faster */
-            -webkit-box-shadow: none !important;
-            box-shadow: none !important;
-            text-shadow: none !important;
-        }
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
 
-        a,
-        a:visited {
-            text-decoration: underline;
-        }
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
 
-        a[href]:after {
-            content: " ("attr(href) ")";
-        }
+    a[href]:after {
+        content: " ("attr(href) ")";
+    }
 
-        abbr[title]:after {
-            content: " ("attr(title) ")";
-        }
+    abbr[title]:after {
+        content: " ("attr(title) ")";
+    }
 
-        /*
+    /*
      * Don't show links that are fragment identifiers,
      * or use the `javascript:` pseudo protocol
      */
 
-        a[href^="#"]:after,
-        a[href^="javascript:"]:after {
-            content: "";
-        }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
 
-        pre {
-            white-space: pre-wrap !important;
-        }
+    pre {
+        white-space: pre-wrap !important;
+    }
 
-        pre,
-        blockquote {
-            border: 1px solid #999;
-            page-break-inside: avoid;
-        }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
 
-        /*
+    /*
      * Printing Tables:
      * http://css-discuss.incutio.com/wiki/Printing_Tables
      */
 
-        thead {
-            display: table-header-group;
-        }
-
-        tr,
-        img {
-            page-break-inside: avoid;
-        }
-
-        p,
-        h2,
-        h3 {
-            orphans: 3;
-            widows: 3;
-        }
-
-        h2,
-        h3 {
-            page-break-after: avoid;
-        }
+    thead {
+        display: table-header-group;
     }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
