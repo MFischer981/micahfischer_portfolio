@@ -160,11 +160,6 @@ textarea {
     animation-direction: reverse;
 }
 
-
-body {
-    overflow-x: hidden;
-}
-
 .sidebanner {
     display: block;
     position: absolute;
