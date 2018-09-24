@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Micah Fischer</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,7 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/animate.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
     crossorigin="anonymous">
   <link rel="stylesheet" href="css/main.css">
@@ -27,49 +27,50 @@
 <!-- Sidebar Navigaton only visable on devices under 800px -->
 <div class="gear"></div>
 <div class="gear" id="secondgear"></div>
+<div class="gear" id="thirdgear"></div>
   <div class="circles"></div>
-
   <div id="Sidenav" class="sidenav">
     <a href="javascript:void(0)" class="closebtn fadeInLeft" onclick="closeNav()">&times;</a>
-    <a href="#" class="animated fadeInLeft">Home</a>
-    <a href="#" class="animated fadeInLeft">About</a>
-    <a href="#" class="animated fadeInLeft">Skills</a>
-    <a href="#" class="animated fadeInLeft">Resume</a>
-    <a href="#" class="animated fadeInLeft">Works</a>
-    <a href="#" class="animated fadeInLeft">Contact</a>
+    <a href="#" >Home</a>
+    <a href="#" >About</a>
+    <a href="#" >Skills</a>
+    <a href="#" >Resume</a>
+    <a href="#" >Works</a>
+    <a href="#" >Contact</a>
   </div>
   <nav>
-    <a href="#" class="animated fadeInLeft">Home</a>
-    <a href="#" class="animated fadeInLeft">About</a>
-    <a href="#" class="animated fadeInLeft">Skills</a>
-    <a href="#" class="animated fadeInLeft">Resume</a>
-    <a href="#" class="animated fadeInLeft">Works</a>
-    <a href="#" class="animated fadeInLeft">Contact</a>
-    <span onclick="openNav()" class="animated fadeInLeft">Menu</span>
+    <a href="#" >Home</a>
+    <a href="#" >About</a>
+    <a href="#" >Skills</a>
+    <a href="#" >Resume</a>
+    <a href="#" >Works</a>
+    <a href="#" >Contact</a>
+    <span onclick="openNav()" >Menu</span>
   </nav>
 
 <!-- Main Header with Name -->
+<div class="headeroverlay"></div>
   <header></header>
-  <div class="header animated fadeInRightBig">
+  <div class="header">
     <h1>Micah<br>Fischer</h1>
   </div>
 
   <!-- About Section with Font Awesome Icon Imported in head. -->
-  <i class="fas fa-user-alt animated fadeInLeftBig"><h4>About</h4></i>
+  <i data-aos="fade-right" class="fas fa-user"><h4>About</h4></i>
   <section>
     <p>Hi! My name is Micah Fischer. I am a Front End Web Developer and Graphic Designer. I have experience with HTML, CSS, JavaScript and JavaScript libraries. I also have a working knowledge of industry graphic design software such as Photoshop, Illustrator, Indesign, and the rest of the Adobe Suite.</p>
     <h1>About</h1>
   </section>
 
 <!-- Skills Section with Font Awesome Icon Imported in head. -->
-  <i class="fas fa-cogs  animated fadeInLeftBig"><h4>Skills</h4></i>
+  <i data-aos="fade-right" class="fas fa-cogs"><h4>Skills</h4></i>
   <section>
     <p>My skills go beyond web development. I have experience in HTML, CSS, as well as JavaScript. Additionally I have worked with JavaScript, jQuery, and Bootstrap. I am a graphic designer and photography enthusiast. I'm well practiced in Version Control and industry best practice. See more in below.</p>
     <h1>Skills</h1>
   </section>
 
   <!-- Grid displaying skills, single column tablet and mobile devices, through @media tag.  -->
-  <div class="skilltable">
+  <div data-aos="fade-up" class="skilltable">
     <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione quod accusantium quasi animi quo in
         molestiae sit ducimus odio, dignissimos consequatur nisi aliquid praesentium vel illum est nostrum laudantium!</p>
@@ -103,7 +104,7 @@
   </div>
 
   <!-- Ecuation Section same code as other Sections, strong denoting school name. -->
-  <i class="fas fa-id-card  animated fadeInLeftBig"><h4>Resume</h4></i>
+  <i data-aos="fade-right" class="fas fa-id-card "><h4>Resume</h4></i>
   <section>
     <p><strong>Shadow Ridge High School</strong></p>
     <p>As I high school student I took general courses but focused on Graphic Design and learned to use software such as Adobe Photoshop, Illustrator and Indesign. I graduated high school with a 3.9 GPA.</p>
@@ -112,7 +113,7 @@
     <h1>Resume</h1>
   </section>
 
-  <i class="fas fa-code  animated fadeInLeftBig"><h4>My Work</h4></i>
+  <i data-aos="fade-right" class="fas fa-code "><h4>My Work</h4></i>
   <section>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione quod accusantium quasi animi quo in
       molestiae sit ducimus odio, dignissimos consequatur nisi aliquid praesentium vel illum est nostrum laudantium!</p>
@@ -120,7 +121,7 @@
   </section>
 
   <!-- Use of same table code buttons linking to sites I have worked on. -->
-  <div class="skilltable">
+  <div data-aos="fade-up" class="skilltable">
     <div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione quod accusantium quasi animi quo in
         molestiae sit ducimus odio, dignissimos consequatur nisi aliquid praesentium vel illum est nostrum laudantium!</p>
@@ -159,11 +160,16 @@
     </div>
   </div>
 
-  <!-- In Touch Section needs form. -->
-  <i class="fas fa-comment-alt  animated fadeInLeftBig"><h4>Get In Touch</h4></i>
+  <!-- In Touch Section with links to contact -->
+  <i data-aos="fade-right" class="fas fa-comment-alt "><h4>Get In Touch</h4></i>
   <section>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam ratione quod accusantium quasi animi quo in
-      molestiae sit ducimus odio, dignissimos consequatur nisi aliquid praesentium vel illum est nostrum laudantium!</p>
+    <p>Call or Text @</p>
+    <button>623-810-7236</button>
+    <p>Email @</p>
+    <button>micahefish@gmail.com</button><br>
+    <button>mfischer981@west-mec.org</button>
+    <p>DM on IG</p>
+    <button>@micahefischer</button>
     <h1>Get In Touch</h1>
   </section>
 
@@ -175,7 +181,10 @@
   </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () {
