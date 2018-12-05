@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Custom Styles */
+body {
+    background-color: rgb(255, 38, 0);
+}
+
+div.top {
+    position: sticky;
+    top: 0;
+}
+
+div.logo {
+    padding: 20px;
+    background: rgb(7, 7, 7);
+}
+
+div.logo img {
+    display: block;
+    transition: .2s;
+    height: 60px;
+}
+
+div.logo h1 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 16px;
+    transition: .2s;
+}
+
+
+header {
+    background: rgb(255, 38, 0);
+    height: 600px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: calc(32px + 3vw);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header hr {
+    width: 40%;
+    margin: 10px auto;
+    color: white;
+    display: block;
+    border: white 2px solid;
+}
+
+header h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: calc(22px + 1vw);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background: rgb(20, 20, 20);
+}
+
+nav span#menu {
+    display: none;
+}
+
+nav div.mobilenav a {
+    display: none;
+}
+
+nav a {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: calc(16px + .4vw);
+    padding: 20px;
+    text-align: center;
+    transition: .1s;
+}
+
+nav a:hover {
+    background: rgb(255, 38, 0);
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+main h1 {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: calc(22px + 1vw);
+    padding-bottom: 40px;
+}
+
+main p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: calc(16px + .6vw);
+    line-height: calc(22px + 1vw);
+}
+
+main div {
+padding: 4vw 2vw;
+}
+ 
+main div:nth-of-type(1) {
+    background: url("micah.jpg");
+    background-size: cover;
+    background-position: center center; 
+}
+
+main div:nth-of-type(2) {
+    background: rgb(20, 20, 20);
+}
+
+section {
+    background: rgb(211, 211, 211);
+    height: auto;
+    display: block;
+    padding: 6vw 0;
+}
+
+section h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(20, 20, 20);
+    font-size: calc(26px + 2.6vw);
+    line-height: calc(30px + 3vw);
+    width: 80%;
+    margin: 0 auto 40px;
+}
+
+section p {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: calc(22px + 1vw);
+}
+
+section h1 span {
+    color: rgb(255, 38, 0);
+    font-weight: bold;
+}
+
+section hr {
+    margin: 20px 0 0;
+    width: 40%;
+    display: block;
+    border: rgb(255, 38, 0) 4px solid;
+}
+
+#spanskills {
+    color: white;
+    border-bottom: rgb(255, 38, 0) 8px solid; 
+}
+
+div.skillrow {
+    margin: 0 auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 4vw;
+}
+
+div.bar {
+    height: 40px;
+    width: 100%;
+    background: rgb(44, 44, 44);
+    box-shadow: 0 0 6px black;
+    margin-bottom: 20px;
+}
+
+#barhtml {
+    display: block;
+    height: 40px;
+    width: 90%;
+    background: rgb(255, 38, 0);
+    transition: 6s;
+}
+
+#barcss {
+    display: block;
+    height: 40px;
+    width: 80%;
+    background: rgb(255, 38, 0);
+}
+
+#barjs {
+    display: block;
+    height: 40px;
+    width: 60%;
+    background: rgb(255, 38, 0);
+}
+
+#barjquery {
+    display: block;
+    height: 40px;
+    width: 70%;
+    background: rgb(255, 38, 0);
+}
+
+#barbootstrap {
+    display: block;
+    height: 40px;
+    width: 90%;
+    background: rgb(255, 38, 0);
+}
+
+#barphp {
+    display: block;
+    height: 40px;
+    width: 60%;
+    background: rgb(255, 38, 0);
+}
+
+#barps {
+    display: block;
+    height: 40px;
+    width: 90%;
+    background: rgb(255, 38, 0);
+}
+
+#barai {
+    display: block;
+    height: 40px;
+    width: 80%;
+    background: rgb(255, 38, 0);
+}
+
+#barind {
+    display: block;
+    height: 40px;
+    width: 80%;
+    background: rgb(255, 38, 0);
+}
+
+#barppro {
+    display: block;
+    height: 40px;
+    width: 90%;
+    background: rgb(255, 38, 0);
+}
+
+#barae {
+    display: block;
+    height: 40px;
+    width: 80%;
+    background: rgb(255, 38, 0);
+}
+
+section:nth-of-type(2), section:nth-of-type(3) {
+    background: url("skills.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+aside {
+    background: rgb(20, 20, 20);
+    padding: 2vw;
+    
+}
+
+aside h1 {
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    color: white;
+    font-size: calc(26px + 1.6vw);
+    line-height: calc(30px + 2vw); 
+}
+
+aside a {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: calc(16px + 1.6vw);
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    background: rgb(255, 38, 0);
+    padding: 10px;
+    width: 30%;
+}
+
+aside a:hover {
+    background: rgb(7, 7, 7);
+}
+
+div.education {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#activities {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+#contact {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+div.education section.school {
+    padding: 2vw 2vw;
+}
+
+div.education section.school:nth-of-type(1) {
+    background: rgb(255, 38, 0);
+}
+
+div.education section.school:nth-of-type(2) {
+    background: rgb(20, 20, 20);
+}
+
+div.education#activities section.school:nth-of-type(even) {
+    background: rgb(44, 44, 44);
+}
+
+div.education#activities section.school:nth-of-type(odd) {
+    background: rgb(34, 34, 34);
+}
+
+div.education#contact section.school:nth-of-type(even) {
+    background: rgb(44, 44, 44);
+}
+
+div.education#contact section.school:nth-of-type(odd) {
+    background: rgb(34, 34, 34);
+}
+
+div.education#activities section.school img {
+    width: calc(32px + 2vw);
+    margin-bottom: 20px;
+}
+
+div.education#contact section.school img {
+    width: calc(32px + 2vw);
+    margin-bottom: 20px;
+}
+
+div.education section.school h1 {
+    width: 100%;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: calc(22px + 1vw);
+    line-height: calc(22px + 1vw);
+    margin-bottom: 12px;
+}
+
+div.education section.school h4 {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: calc(18px + .8vw);
+}
+
+div.education section.school p {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: calc(16px + .6vw);
+    line-height: calc(22px + 1vw);
+    margin-top: 20px;
+}
+
+div.education section.school:nth-of-type(2) span {
+    color: rgb(255, 38, 0);
+}
+
+div.education section.school:nth-of-type(1) span {
+    color: rgb(20, 20, 20);
+}
+
+div.credits {
+    background: rgb(20, 20, 20);
+    padding: 2vw;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(90, 90, 90);
+    font-size: 12px;
+    line-height: 22px;
+    text-align: center;
+}
+
+div.credits a {
+    background: rgb(34, 34, 34);
+    padding: 2px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: rgb(90, 90, 90); 
+    transition: .1s;
+}
+
+div.credits a:hover {
+    background: rgb(44, 44, 44);
+    text-decoration: none;
+}
+
+form {
+    margin: 0 auto;
+    width: 80%;
+    display: block;
+}
+
+section form h1 {
+    color: white;
+}
+
+form input {
+    width: 100%;
+    background: rgb(20, 20, 20);
+    border: none;
+    font-size: calc(16px + .6vw);
+    padding: 6px;
+    border-bottom: 6px rgb(44, 44, 44) solid;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+form input.button {
+    width: 50%;
+}
+
+form input:hover {
+    border-bottom: 6px rgb(255, 38, 0) solid;
+}
+
+form textarea {
+    resize: none;
+    width: 100%;
+    background: rgb(20, 20, 20);
+    border: none;
+    font-size: calc(16px + .6vw);
+    padding: 6px;
+    border-bottom: 6px rgb(44, 44, 44) solid;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    transition: .3s;
+}
+
+form textarea:hover {
+    border-bottom: 6px rgb(255, 38, 0) solid;
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main div:first-of-type {
+        height: 400px;
+    }
+
+    div.skillrow {
+        grid-template-columns: 1fr;
+    }
+
+    div.education {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #activities {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    
+
+    div.education section.school {
+        padding: 4vw 4vw;
+    }
+
+    main div {
+        padding: 6vw 4vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    main div:first-of-type {
+        height: 400px;
+    }
+
+    div.skillrow {
+        grid-template-columns: 1fr;
+    }
+
+    div.education {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+    #activities {
+        grid-template-columns: 1fr;
+    }
+
+    #contact {
+        grid-template-columns: 1fr;
+    }
+    
+
+    div.education section.school {
+        padding: 4vw 4vw;
+    }
+
+    nav span#menu {
+        display: block;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    nav span#menu {
+        font-family: 'Montserrat', sans-serif;
+        color: white;
+        text-decoration: none;
+        font-size: calc(16px + .4vw);
+        padding: 20px;
+        text-align: center;
+        transition: .1s;
+    }
+    
+    nav span#menu:hover {
+        background: rgb(255, 38, 0);
+    }
+
+    nav div.mobilenav {
+        position: absolute;
+        background: rgb(20, 20, 20);
+        width: 100%;
+    }
+
+    nav div.mobilenav span#menu  {
+        font-size: 24px;
+    }
+
+    nav div.mobilenav span img {
+        width: 18px;
+    }
+
+    nav div.mobilenav:hover a {
+        display: block;
+        font-size: 24px;
+    }
+
+}
