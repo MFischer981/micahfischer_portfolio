@@ -1,18 +1,15 @@
-
-
 $(window).scroll(function () {
-    if ($(this).scrollTop() < 180) {
+    if ($(this).scrollTop() < 350) {
         $('div.logo img').css({
-            'height' : "80px",
+            'height': "80px",
         });
     }
 });
 
 $(window).scroll(function () {
-    if ($(this).scrollTop() > 100) {
+    if ($(this).scrollTop() > 0) {
         $('div.logo img').css({
-            'height' : "60px",
+            'height': "60px",
         });
     }
 });
-

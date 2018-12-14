@@ -7,57 +7,146 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
     line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 img {
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
+
 * {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -70,6 +159,7 @@ body {
 div.top {
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 div.logo {
@@ -79,8 +169,8 @@ div.logo {
 
 div.logo img {
     display: block;
-    transition: .2s;
-    height: 60px;
+    transition: .1s;
+    height: 80px;
 }
 
 div.logo h1 {
@@ -153,6 +243,13 @@ nav a:hover {
     background: rgb(255, 38, 0);
 }
 
+div.linkjquerytrick {
+    position: relative;
+    top: -200px;
+    float: left;
+    height: 0;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -173,13 +270,13 @@ main p {
 }
 
 main div {
-padding: 4vw 2vw;
+    padding: 4vw 2vw;
 }
- 
+
 main div:nth-of-type(1) {
     background: url("micah.jpg");
     background-size: cover;
-    background-position: center center; 
+    background-position: center center;
 }
 
 main div:nth-of-type(2) {
@@ -222,7 +319,7 @@ section hr {
 
 #spanskills {
     color: white;
-    border-bottom: rgb(255, 38, 0) 8px solid; 
+    border-bottom: rgb(255, 38, 0) 8px solid;
 }
 
 div.skillrow {
@@ -319,16 +416,28 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-section:nth-of-type(2), section:nth-of-type(3) {
+section:nth-of-type(2),
+section:nth-of-type(3) {
     background: url("skills.jpg");
     background-attachment: fixed;
     background-size: cover;
 }
 
 aside {
-    background: rgb(20, 20, 20);
+    background: rgb(34, 34, 34);
     padding: 2vw;
-    
+}
+
+aside.main {
+    padding: 0;
+    border-top: rgb(255, 38, 0) 12px solid;
+}
+
+aside.main h1 {
+    background: url("https://images.unsplash.com/photo-1526374870839-e155464bb9b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background-attachment: fixed;
+    filter: grayscale(100%);
+    padding: 4vw;
 }
 
 aside h1 {
@@ -336,7 +445,7 @@ aside h1 {
     text-align: center;
     color: white;
     font-size: calc(26px + 1.6vw);
-    line-height: calc(30px + 2vw); 
+    line-height: calc(30px + 2vw);
 }
 
 aside a {
@@ -457,7 +566,7 @@ div.credits a {
     padding: 2px 12px;
     border-radius: 20px;
     text-decoration: none;
-    color: rgb(90, 90, 90); 
+    color: rgb(90, 90, 90);
     transition: .1s;
 }
 
@@ -532,7 +641,7 @@ form textarea:hover {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     #activities {
         grid-template-columns: 1fr 1fr;
     }
@@ -540,7 +649,7 @@ form textarea:hover {
     #contact {
         grid-template-columns: 1fr;
     }
-    
+
 
     div.education section.school {
         padding: 4vw 4vw;
@@ -568,7 +677,7 @@ form textarea:hover {
         display: grid;
         grid-template-columns: 1fr;
     }
-    
+
     #activities {
         grid-template-columns: 1fr;
     }
@@ -576,7 +685,7 @@ form textarea:hover {
     #contact {
         grid-template-columns: 1fr;
     }
-    
+
 
     div.education section.school {
         padding: 4vw 4vw;
@@ -599,7 +708,7 @@ form textarea:hover {
         text-align: center;
         transition: .1s;
     }
-    
+
     nav span#menu:hover {
         background: rgb(255, 38, 0);
     }
@@ -610,7 +719,7 @@ form textarea:hover {
         width: 100%;
     }
 
-    nav div.mobilenav span#menu  {
+    nav div.mobilenav span#menu {
         font-size: 24px;
     }
 
