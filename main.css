@@ -7,7 +7,6 @@
    License: none (public domain)
 */
 
-/* Reset Stylesheet */
 html,
 body,
 div,
@@ -153,33 +152,27 @@ img {
 }
 
 /* Custom Styles */
-
-/* Body background color. */
 body {
     background-color: rgb(255, 38, 0);
 }
 
-/* Top banner with position of sticky. Top set to 0. Z-index of 1000 to place over all other elements. */
 div.top {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
-/* Logo banner with padding os 20px and dark grey background. */
 div.logo {
     padding: 20px;
     background: rgb(7, 7, 7);
 }
 
-/* Logo image displayed as block with heigh of 60px and transition of .1s for jQuery scroll effect. */
 div.logo img {
     display: block;
     transition: .1s;
     height: 60px;
 }
 
-/* H1 in uppercase with fonr styles. */
 div.logo h1 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -188,15 +181,21 @@ div.logo h1 {
     transition: .2s;
 }
 
-/* Header displayed as grid. */
 header {
     background: rgb(255, 38, 0);
     height: 600px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    transition: 1s;
 }
 
-/* Header h1 font styles. */
+#gradient
+{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 header h1 {
     font-family: 'Roboto Slab', serif;
     color: white;
@@ -207,7 +206,8 @@ header h1 {
     transition: 1s;
 }
 
-/* Header hr styles */
+
+
 header hr {
     width: 40%;
     margin: 10px auto;
@@ -216,7 +216,6 @@ header hr {
     border: white 2px solid;
 }
 
-/* Header h4 font styles. */
 header h4 {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -226,14 +225,12 @@ header h4 {
     text-align: center;
 }
 
-/* Grid navigation */
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: rgb(20, 20, 20);
 }
 
-/* Mobile menu hidden on desktop. */
 nav span#menu {
     display: none;
 }
@@ -242,7 +239,6 @@ nav div.mobilenav a {
     display: none;
 }
 
-/* Nav link styles. */
 nav a {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -253,12 +249,10 @@ nav a {
     transition: .1s;
 }
 
-/* Nav link hover styles.  */
 nav a:hover {
     background: rgb(255, 38, 0);
 }
 
-/* jqurey position for click to scroll, accounts for stikcy nav when scrolling to page section. */
 div.linkjquerytrick {
     position: relative;
     top: -160px;
@@ -266,13 +260,11 @@ div.linkjquerytrick {
     height: 0;
 }
 
-/* Main set to grid of two columns. */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-/* Main h1 font styles. */
 main h1 {
     font-family: 'Roboto Slab', serif;
     color: white;
@@ -280,7 +272,6 @@ main h1 {
     padding-bottom: 40px;
 }
 
-/* Main p font styles. */
 main p {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -288,24 +279,20 @@ main p {
     line-height: calc(22px + 1vw);
 }
 
-/* Main div padding set. */
 main div {
     padding: 4vw 2vw;
 }
 
-/* Main div background set to image. Size set to cover, centered in background. */
 main div:nth-of-type(1) {
     background: url("micah.jpg");
     background-size: cover;
     background-position: center center;
 }
 
-/* Second div set to color background. */
 main div:nth-of-type(2) {
     background: rgb(20, 20, 20);
 }
 
-/* Section background set. Height set to auto. Display as block. PAdding set to 6px on top and bottom. */
 section {
     background: rgb(211, 211, 211);
     height: auto;
@@ -313,7 +300,6 @@ section {
     padding: 6vw 0;
 }
 
-/* Section h1 font styles. */
 section h1 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(20, 20, 20);
@@ -323,20 +309,17 @@ section h1 {
     margin: 0 auto 40px;
 }
 
-/* Section p font styles. */
 section p {
     font-family: 'Roboto Slab', serif;
     color: white;
     font-size: calc(22px + 1vw);
 }
 
-/* Section h1 span. */
 section h1 span {
     color: rgb(255, 38, 0);
     font-weight: bold;
 }
 
-/* Section hr styles. */
 section hr {
     margin: 20px 0 0;
     width: 40%;
@@ -344,13 +327,11 @@ section hr {
     border: rgb(255, 38, 0) 4px solid;
 }
 
-/* ID of spanskills set to color white and border bottom set to solid 8px orange border. */
 #spanskills {
     color: white;
     border-bottom: rgb(255, 38, 0) 8px solid;
 }
 
-/* Skill rows. */
 div.skillrow {
     margin: 0 auto;
     width: 80%;
@@ -359,7 +340,6 @@ div.skillrow {
     grid-gap: 0 4vw;
 }
 
-/* Bar background. */
 div.bar {
     height: 40px;
     width: 100%;
@@ -368,16 +348,14 @@ div.bar {
     margin-bottom: 20px;
 }
 
-/* Skill bars, Display as block. Height set to 40px. Background set to orange. Width set according to skill. */
-/* HTML */
 #barhtml {
     display: block;
     height: 40px;
     width: 90%;
     background: rgb(255, 38, 0);
+    transition: 6s;
 }
 
-/* CSS */
 #barcss {
     display: block;
     height: 40px;
@@ -385,7 +363,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* JavaScript */
 #barjs {
     display: block;
     height: 40px;
@@ -393,7 +370,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* jQuery */
 #barjquery {
     display: block;
     height: 40px;
@@ -401,7 +377,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Bootstrap */
 #barbootstrap {
     display: block;
     height: 40px;
@@ -409,7 +384,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* PHP */
 #barphp {
     display: block;
     height: 40px;
@@ -417,7 +391,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Photoshop */
 #barps {
     display: block;
     height: 40px;
@@ -425,7 +398,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Illustrator */
 #barai {
     display: block;
     height: 40px;
@@ -433,7 +405,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Indesign */
 #barind {
     display: block;
     height: 40px;
@@ -441,7 +412,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Premiere Pro */
 #barppro {
     display: block;
     height: 40px;
@@ -449,7 +419,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* After Effects */
 #barae {
     display: block;
     height: 40px;
@@ -457,7 +426,6 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Sections background attachment set to fixed. Size set to cover. */
 section:nth-of-type(2),
 section:nth-of-type(4) {
     background: url("skills.jpg");
@@ -466,7 +434,6 @@ section:nth-of-type(4) {
     background-size: cover;
 }
 
-/* Aside background and padding set. */
 aside {
     background: rgb(34, 34, 34);
     padding: 2vw;
@@ -476,7 +443,6 @@ aside.main {
     padding: 0;
 }
 
-/* Aside h1 font and background styles. */
 aside.main h1 {
     background: url("micahskills.jpg");
     background-attachment: fixed;
@@ -488,7 +454,6 @@ aside.main h1 {
     line-height: calc(30px + 3vw);
 }
 
-/* Aside h1 styles. */
 aside h1 {
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -497,7 +462,6 @@ aside h1 {
     line-height: calc(30px + 2vw);
 }
 
-/* Aside a styles. */
 aside a {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -511,75 +475,62 @@ aside a {
     width: 30%;
 }
 
-/* Aside link hover. */
 aside a:hover {
     background: rgb(7, 7, 7);
 }
 
-/* Education grid. */
 div.education {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-/* ID of activities grid layout. */
 #activities {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* ID of contact grid layout. */
+
 #contact {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/*  Section with class of school witin div with class of education padding set.  */
 div.education section.school {
     padding: 2vw 2vw;
 }
 
-/* 1st of section with class of school witin div with class of education background set. */
 div.education section.school:nth-of-type(1) {
     background: rgb(255, 38, 0);
 }
 
-/* 2nd of section with class of school witin div with class of education background set. */
 div.education section.school:nth-of-type(2) {
     background: rgb(20, 20, 20);
 }
 
-/* Even sections with class of school witin div with class of education and id of activities background set. */
 div.education#activities section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
 
-/* Odd sections with class of school witin div with class of education and id of activities background set. */
 div.education#activities section.school:nth-of-type(odd) {
     background: rgb(34, 34, 34);
 }
 
-/* Even sections with class of school witin div with class of education and id of contact background set. */
 div.education#contact section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
 
-/* Odd sections with class of school witin div with class of education and id of contact background set. */
 div.education#contact section.school:nth-of-type(odd) {
     background: rgb(34, 34, 34);
 }
 
-/* Images in section.school within div.education#activities set to calculated width with a bottom margin of 20px. */
 div.education#activities section.school img {
     width: calc(32px + 2vw);
     margin-bottom: 20px;
 }
 
-/* Images in section.school within div.education#contact set to calculated width with a bottom margin of 20px. */
 div.education#contact section.school img {
     width: calc(32px + 2vw);
     margin-bottom: 20px;
 }
 
-/* H1 in section.school in div.education font styles defined. */
 div.education section.school h1 {
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -589,7 +540,6 @@ div.education section.school h1 {
     margin-bottom: 12px;
 }
 
-/* H4 in section.school in div.education font styles defined. */
 div.education section.school h4 {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -598,7 +548,6 @@ div.education section.school h4 {
     font-size: calc(18px + .8vw);
 }
 
-/* P in section.school in div.education font styles defined. */
 div.education section.school p {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -608,22 +557,18 @@ div.education section.school p {
     margin-top: 20px;
 }
 
-/* Span in second section.school in div.education font color defined. */
 div.education section.school:nth-of-type(2) span {
     color: rgb(255, 38, 0);
 }
 
-/* Span in first section.school in div.education font color defined. */
 div.education section.school:nth-of-type(1) span {
     color: rgb(20, 20, 20);
 }
 
-/* Links in section in div.education have no text decoration. */
 div.education section a {
     text-decoration: none;
 }
 
-/* Div credits layout and font styles. */
 div.credits {
     background: rgb(20, 20, 20);
     padding: 2vw;
@@ -634,7 +579,6 @@ div.credits {
     text-align: center;
 }
 
-/* Div credit link styles. */
 div.credits a {
     background: rgb(34, 34, 34);
     padding: 2px 12px;
@@ -644,13 +588,11 @@ div.credits a {
     transition: .1s;
 }
 
-/* Div credit hover styles. */
 div.credits a:hover {
     background: rgb(44, 44, 44);
     text-decoration: none;
 }
 
-/* Form  */
 form {
     margin: 0 auto;
     width: 80%;
@@ -856,17 +798,13 @@ form textarea:hover {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    section:nth-of-type(2),
-    section:nth-of-type(4),
-    aside.main h1 {
+    section, aside {
         background-attachment: scroll;
     }
   }
   
   @supports not (-webkit-overflow-scrolling: touch) {
-    section:nth-of-type(2),
-    section:nth-of-type(4),
-    aside.main h1 {
+    section, aside {
         background-attachment: fixed;
     }
   }
