@@ -798,13 +798,17 @@ form textarea:hover {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    section, aside {
+    section:nth-of-type(2), 
+    section:nth-of-type(4), 
+    aside.main h1 {
         background-attachment: scroll;
     }
   }
   
   @supports not (-webkit-overflow-scrolling: touch) {
-    section, aside {
+    section:nth-of-type(2), 
+    section:nth-of-type(4), 
+    aside.main h1 {
         background-attachment: fixed;
     }
   }
