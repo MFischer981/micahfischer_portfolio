@@ -1,7 +1,7 @@
 $(window).scroll(function () {
-    if ($(this).scrollTop() < 350) {
+    if ($(this).scrollTop() < 450) {
         $('div.logo img').css({
-            'height': "80px",
+            'transform': "scale(1)",
         });
     }
 });
@@ -9,7 +9,15 @@ $(window).scroll(function () {
 $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
         $('div.logo img').css({
-            'height': "60px",
+            'transform': "scale(.8) translateX(-20px)",
         });
     }
 });
+
+
+
+
+
+
+
+

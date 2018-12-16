@@ -170,7 +170,7 @@ div.logo {
 div.logo img {
     display: block;
     transition: .1s;
-    height: 80px;
+    height: 60px;
 }
 
 div.logo h1 {
@@ -181,12 +181,19 @@ div.logo h1 {
     transition: .2s;
 }
 
-
 header {
     background: rgb(255, 38, 0);
     height: 600px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    transition: 1s;
+}
+
+#gradient
+{
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 header h1 {
@@ -196,7 +203,10 @@ header h1 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    transition: 1s;
 }
+
+
 
 header hr {
     width: 40%;
@@ -217,7 +227,7 @@ header h4 {
 
 nav {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     background: rgb(20, 20, 20);
 }
 
@@ -245,7 +255,7 @@ nav a:hover {
 
 div.linkjquerytrick {
     position: relative;
-    top: -200px;
+    top: -160px;
     float: left;
     height: 0;
 }
@@ -356,14 +366,14 @@ div.bar {
 #barjs {
     display: block;
     height: 40px;
-    width: 60%;
+    width: 30%;
     background: rgb(255, 38, 0);
 }
 
 #barjquery {
     display: block;
     height: 40px;
-    width: 70%;
+    width: 40%;
     background: rgb(255, 38, 0);
 }
 
@@ -377,7 +387,7 @@ div.bar {
 #barphp {
     display: block;
     height: 40px;
-    width: 60%;
+    width: 20%;
     background: rgb(255, 38, 0);
 }
 
@@ -417,7 +427,7 @@ div.bar {
 }
 
 section:nth-of-type(2),
-section:nth-of-type(3) {
+section:nth-of-type(4) {
     background: url("skills.jpg");
     background-attachment: fixed;
     background-size: cover;
@@ -430,14 +440,16 @@ aside {
 
 aside.main {
     padding: 0;
-    border-top: rgb(255, 38, 0) 12px solid;
 }
 
 aside.main h1 {
-    background: url("https://images.unsplash.com/photo-1526374870839-e155464bb9b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80");
+    background: url("micahskills.jpg");
     background-attachment: fixed;
+    background-size: cover;
     filter: grayscale(100%);
-    padding: 4vw;
+    padding: 4vw 2vw 2vw;
+    font-size: calc(26px + 2.6vw);
+    line-height: calc(30px + 3vw);
 }
 
 aside h1 {
@@ -624,6 +636,42 @@ form textarea:hover {
     border-bottom: 6px rgb(255, 38, 0) solid;
 }
 
+#clientcanyon {
+    padding: 6vw 0;
+    background: url("Angle 1.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+#clientcanyon p {
+    text-align: center;
+}
+
+#clientcanyon img {
+    display: block;
+    margin: 0 auto;
+    width: 20%;
+    padding: 20px
+}
+
+#clientcanyon a {
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        color: white;
+        font-size: calc(16px + 1.6vw);
+        display: block;
+        margin: 20px auto;
+        text-decoration: none;
+        background: rgb(255, 38, 0);
+        padding: 10px;
+        width: 30%;
+}
+
+#clientcanyon a:hover {
+    background: rgb(7, 7, 7);
+}
+
 @media only screen and (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
@@ -658,9 +706,10 @@ form textarea:hover {
     main div {
         padding: 6vw 4vw;
     }
+
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 680px) {
     main {
         grid-template-columns: 1fr;
     }
@@ -730,6 +779,13 @@ form textarea:hover {
     nav div.mobilenav:hover a {
         display: block;
         font-size: 24px;
+    }
+
+    #clientcanyon img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        padding: 20px
     }
 
 }
