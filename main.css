@@ -800,7 +800,8 @@ form textarea:hover {
 @supports (-webkit-overflow-scrolling: touch) {
     section:nth-of-type(2), 
     section:nth-of-type(4), 
-    aside.main h1 {
+    aside.main h1
+    #clientcanyon {
         background-attachment: scroll;
     }
   }
@@ -808,7 +809,8 @@ form textarea:hover {
   @supports not (-webkit-overflow-scrolling: touch) {
     section:nth-of-type(2), 
     section:nth-of-type(4), 
-    aside.main h1 {
+    aside.main h1
+    #clientcanyon {
         background-attachment: fixed;
     }
   }
