@@ -565,6 +565,10 @@ div.education section.school:nth-of-type(1) span {
     color: rgb(20, 20, 20);
 }
 
+div.education section a {
+    text-decoration: none;
+}
+
 div.credits {
     background: rgb(20, 20, 20);
     padding: 2vw;
@@ -792,3 +796,15 @@ form textarea:hover {
     }
 
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+    section, aside {
+        background-attachment: scroll;
+    }
+  }
+  
+  @supports not (-webkit-overflow-scrolling: touch) {
+    section, aside {
+        background-attachment: fixed;
+    }
+  }
