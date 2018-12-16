@@ -801,7 +801,7 @@ form textarea:hover {
     section:nth-of-type(2), 
     section:nth-of-type(4), 
     aside.main h1
-    #clientcanyon {
+    section#clientcanyon {
         background-attachment: scroll;
     }
   }
@@ -810,7 +810,7 @@ form textarea:hover {
     section:nth-of-type(2), 
     section:nth-of-type(4), 
     aside.main h1
-    #clientcanyon {
+    section#clientcanyon {
         background-attachment: fixed;
     }
   }
