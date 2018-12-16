@@ -1,10 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js">
-<!--<![endif]-->
 
 <head>
     <meta charset="utf-8">
@@ -14,133 +8,277 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <script>
-        AOS.init();
-    </script>
-    <nav>
-        <img src="Logo-01.png" alt="">
-        <span><i class="fas fa-bars"></i></span>
-    </nav>
-    <header>
-        <h1>Micah Fischer</h1>
-        <h2>Web Developer & Graphic Designer</h2>
+
+    <div class="top">
+        <div class="logo">
+            <img src="logomicah-01.png" alt="">
+        </div>
+
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skillset</a>
+            <a href="#experience">Experience</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contactform">Contact</a>
+            <div class="mobilenav">
+                <span id="menu"><img src="menu.svg" alt=""> Menu</span>
+                <a href="#about">About</a>
+                <a href="#skills">Skillset</a>
+                <a href="#experience">Experience</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#contactform">Contact</a>
+            </div>
+
+        </nav>
+    </div>
+
+    <header id="gradient">
+        <div></div>
+        <div>
+            <h1>Micah Fischer</h1>
+            <hr>
+            <h4>Web Developer & Graphic Designer</h4>
+        </div>
+        <div></div>
     </header>
-    <nav class="works" data-scroll-speed="2">
+    <div class="linkjquerytrick" id="about"></div>
+    <section id="about">
+        <h1><span>Hello.</span> I'm Micah Fischer, a student, front end web developer, and graphic designer. Good
+            design is essential to making life easier for everyone.</h1>
+        <hr>
+    </section>
+    <main>
         <div>
-            <h1>About Me</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempore deleniti. Aut dignissimos itaque
-                placeat quisquam. Culpa rem doloribus explicabo aliquid beatae sint amet reiciendis dolore, optio
-                sapiente commodi accusantium.</p>
         </div>
         <div>
-            <h1>Projects</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempore deleniti. Aut dignissimos itaque
-                placeat quisquam. Culpa rem doloribus explicabo aliquid beatae sint amet reiciendis dolore, optio
-                sapiente commodi accusantium.</p>
+            <h1>About Micah Fischer</h1>
+            <p>Graphic Design and Web Development are two of the most exciting things to me. Smart design makes life
+                easier especially in an age where technology can be confusing and cluttered. As a student at WestMEC
+                and Shadow Ridge High School I have explored the world of web development and graphic design
+                extensively. I have a working knowledge of HTML5, CSS3, and JavaScript. I have also built strong
+                skillsets with industry graphic design software such as Photoshop, Illustrator, and Indesign. I look
+                forward to building a meaningful career in the feild of Web Developement and Design. </p>
         </div>
-        <div>
-            <h1>Skills</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempore deleniti. Aut dignissimos itaque
-                placeat quisquam. Culpa rem doloribus explicabo aliquid beatae sint amet reiciendis dolore, optio
-                sapiente commodi accusantium.</p>
-        </div>
-        <div>
-            <h1>Resume</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius, tempore deleniti. Aut dignissimos itaque
-                placeat quisquam. Culpa rem doloribus explicabo aliquid beatae sint amet reiciendis dolore, optio
-                sapiente commodi accusantium.</p>
-        </div>
-    </nav>
+    </main>
+    <div class="linkjquerytrick" id="skills"></div>
+    <section>
+        <h1><span id="spanskills">Web Developement & Design <span>Skills</span></span></h1>
+        <div class="skillrow">
+            <div>
+                <p>HTML</p>
+                <div class="bar">
+                    <div id="barhtml"></div>
+                </div>
+            </div>
 
-    <article data-scroll-speed="1">
-        <h1>About Micah</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur deleniti, sapiente omnis ipsum ullam,
-            fuga necessitatibus ratione earum maiores in excepturi? Ut facere officiis illo in, reprehenderit maiores
-            quos porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium vel dolore ab voluptate
-            distinctio, doloremque itaque nulla sapiente? Veniam odit temporibus, asperiores repudiandae culpa et
-            corrupti aut tempore quam. Quas.</p>
-    </article>
+            <div>
+                <p>CSS</p>
+                <div class="bar">
+                    <div id="barcss"></div>
+                </div>
+            </div>
 
-    <section data-scroll-speed="12">
-        <h1>Projects</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates commodi eos consequatur facere a
-            itaque ipsum unde exercitationem. Repudiandae nisi dolorem neque voluptates omnis aspernatur.</p>
+            <div>
+                <p>Bootstrap</p>
+                <div class="bar">
+                    <div id="barbootstrap"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>JavaScript</p>
+                <div class="bar">
+                    <div id="barjs"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>jQuery</p>
+                <div class="bar">
+                    <div id="barjquery"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>PHP</p>
+                <div class="bar">
+                    <div id="barphp"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Adobe Photoshop</p>
+                <div class="bar">
+                    <div id="barps"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Adobe Illustrator</p>
+                <div class="bar">
+                    <div id="barai"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Adobe Indesign</p>
+                <div class="bar">
+                    <div id="barind"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Adobe Premiere Pro</p>
+                <div class="bar">
+                    <div id="barppro"></div>
+                </div>
+            </div>
+
+            <div>
+                <p>Adobe After Effects</p>
+                <div class="bar">
+                    <div id="barae"></div>
+                </div>
+            </div>
+
+        </div>
     </section>
 
-    <div class="project" data-scroll-speed="2">
-        <div id="firstproj"></div>
-        <div>
-            <h1>Project A</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita omnis perspiciatis, voluptas, aperiam
-                aliquid fugiat corporis voluptatum similique ea illo architecto error molestiae ipsum commodi porro,
-                quia magnam fuga quis?</p>
-            <a href="#">Lorem Ipsum</a>
-        </div>
-    </div>
-    <div class="project" data-scroll-speed="2">
-        <div id="firstproj"></div>
-        <div>
-            <h1>Project B</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita omnis perspiciatis, voluptas, aperiam
-                aliquid fugiat corporis voluptatum similique ea illo architecto error molestiae ipsum commodi porro,
-                quia magnam fuga quis?</p>
-            <a href="#">Lorem Ipsum</a>
-        </div>
-    </div>
-    <div class="project" data-scroll-speed="2">
-            <div id="firstproj"></div>
-            <div>
-                <h1>Project C</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita omnis perspiciatis, voluptas, aperiam
-                    aliquid fugiat corporis voluptatum similique ea illo architecto error molestiae ipsum commodi porro,
-                    quia magnam fuga quis?</p>
-                <a href="#">Lorem Ipsum</a>
-            </div>
-        </div>
-        <div class="project" data-scroll-speed="2">
-            <div id="firstproj"></div>
-            <div>
-                <h1>Project D</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita omnis perspiciatis, voluptas, aperiam
-                    aliquid fugiat corporis voluptatum similique ea illo architecto error molestiae ipsum commodi porro,
-                    quia magnam fuga quis?</p>
-                <a href="#">Lorem Ipsum</a>
-            </div>
-        </div>
-        <section data-scroll-speed="24">
-                <h1>Skills</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptates commodi eos consequatur facere a
-                    itaque ipsum unde exercitationem. Repudiandae nisi dolorem neque voluptates omnis aspernatur.</p>
+    <div class="linkjquerytrick" id="experience"></div>
+    <div class="education">
+        <section class="school">
+            <h1>Shadow Ridge High School <span>3.958 GPA</span></h1>
+            <h4>2016-2020</h4>
+            <p>While taking general classes I took Digital Communcation classes where I learned industry software such
+                as Photoshop, Illustrator, and Indesign. At Shadow Ridge I was a member of SkillsUSA and competed in
+                Graphic Design at the regional and state level. I was a member of the Photography Club and played JV
+                and Varsity Tennis.</p>
         </section>
-        <div class="skills"  data-scroll-speed="15">
-                <div id="html">
-                    <h1>HTML</h1>
-                </div>
-                <div id="css">
-                    <h1>CSS</h1>
-                </div>
-                <div id="js">
-                    <h1>JS</h1>
-                </div>
-                <div id="jquery">
-                    <h1>jQuery</h1>
-                </div>
-                <div id="php">
-                    <h1>PHP</h1>
-                </div>
-                <div id="bstrap">
-                    <h1>B.strap</h1>
-                </div>
-            </div>
-                      
+        <section class="school">
+            <h1>WestMEC Coding <span>4.0 GPA</span></h1>
+            <h4>2018-2020</h4>
+            <p>While at WestMEC I learned HTML, CSS, JavaScript, jQuery, Bootstrap, and PHP from skilled instructors. I
+                also developed key leadership and communication skills. I learned from industry curriculum which
+                followed indutry best practice. I was also a intern developer for the Coding Intership Program.
+                Additionally I was an FBLA officer and helped organize events and fundraisers for our chapter.</p>
+        </section>
+    </div>
+
+    <div class="education" id="activities">
+        <section class="school">
+            <img src="tennis-ball.svg" alt="">
+            <h1>Shadow Ridge Varsity/JV Tennis</h1>
+            <h4>2016-2017</h4>
+        </section>
+        <section class="school">
+            <img src="photo-camera.svg" alt="">
+            <h1>Shadow Ridge Photography Club</h1>
+            <h4>2016-2017</h4>
+        </section>
+        <section class="school">
+            <img src="medal.svg" alt="">
+            <h1>SkillsUSA Member</h1>
+            <h4>2017-2018</h4>
+        </section>
+        <section class="school">
+            <img src="medal.svg" alt="">
+            <h1>FBLA Member/VP of Committees</h1>
+            <h4>2018-Present</h4>
+        </section>
+        <section class="school">
+            <img src="programming-code.svg" alt="">
+            <h1>WestMEC Coding Intership Program Developer</h1>
+            <h4>2018-Present</h4>
+        </section>
+        <section class="school">
+            <img src="heart.svg" alt="">
+            <h1>Desert Springs Community Church Assistant</h1>
+            <h4>2016-Present</h4>
+        </section>
+    </div>
+
+    <aside>
+        <h1>Download My Resume</h1>
+        <a href="#" download="">Download</a>
+    </aside>
+
+    <div class="linkjquerytrick" id="portfolio"></div>
+    <section id="clientcanyon">
+        <img src="canyonlogo-01.png" alt="">
+        <p>AZ Safari Camp</p>
+        <a href="https://micahfischer.github.io/AZCampSafari/">Visit Site</a>
+    </section>
+
+    <div class="linkjquerytrick" id="contactform"></div>
+    <section>
+        <h1>
+            <span id="spanskills">Say <span>Hello.</span></span>
+        </h1>
+        <form action="contact.php" method="POST">
+            <p>Name</p> <input type="text" name="name">
+            <p>Email</p> <input type="text" name="email">
+            <p>Phone</p> <input type="text" name="phone">
+            <p>Message</p><textarea name="message" rows="6" cols="25"></textarea><br />
+            <input type="submit" value="Send" id="button" class="button">
+            <input type="reset" value="Clear" id="button" class="button">
+        </form>
+    </section>
+
+    <div class="education" id="contact">
+        <section class="school">
+            <img src="phone-receiver.svg" alt="">
+            <h1>Call/Text</h1>
+            <h4>623-810-7236</h4>
+        </section>
+        <section class="school">
+            <img src="instagram-logo.svg" alt="">
+            <h1>Instagam</h1>
+            <h4>@micahefischer</h4>
+        </section>
+        <section class="school">
+            <img src="envelope.svg" alt="">
+            <h1>Email</h1>
+            <h4>micahefish@<br>gmail.com</h4>
+        </section>
+
+    </div>
+
+
+    <div class="credits">
+        Website Design by Micah Fischer © Micah Fischer 2018 All Rights Reserved
+
+        <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/gregor-cresnar" title="Gregor Cresnar">Gregor
+                Cresnar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed
+            by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC
+                3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/zurb" title="Zurb">Zurb</a> from <a href="https://www.flaticon.com/"
+                title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/dave-gandy" title="Dave Gandy">Dave Gandy</a> from
+            <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="https://www.flaticon.com/authors/eleonor-wang" title="Eleonor Wang">Eleonor Wang</a>
+            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+                title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </div>
+
+
+
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
