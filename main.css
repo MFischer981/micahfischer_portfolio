@@ -152,10 +152,13 @@ img {
 }
 
 /* Custom Styles */
+
+/* Body styles */
 body {
     background-color: rgb(255, 38, 0);
 }
 
+/* Top Navigation styles and logo styles. */
 div.top {
     position: sticky;
     top: 0;
@@ -181,6 +184,7 @@ div.logo h1 {
     transition: .2s;
 }
 
+/* Header styles */
 header {
     background: rgb(255, 38, 0);
     height: 600px;
@@ -188,25 +192,6 @@ header {
     grid-template-rows: 1fr 1fr 1fr;
     transition: 1s;
 }
-
-#gradient
-{
-  width: 100%;
-  padding: 0px;
-  margin: 0px;
-}
-
-header h1 {
-    font-family: 'Roboto Slab', serif;
-    color: white;
-    font-size: calc(32px + 3vw);
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-    transition: 1s;
-}
-
-
 
 header hr {
     width: 40%;
@@ -225,12 +210,14 @@ header h4 {
     text-align: center;
 }
 
+/* Navigation styles */
 nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background: rgb(20, 20, 20);
 }
 
+/* Hidden mobile navigation. */
 nav span#menu {
     display: none;
 }
@@ -253,6 +240,7 @@ nav a:hover {
     background: rgb(255, 38, 0);
 }
 
+/* Sets position above in order to account for sticky nav links. */
 div.linkjquerytrick {
     position: relative;
     top: -160px;
@@ -260,6 +248,7 @@ div.linkjquerytrick {
     height: 0;
 }
 
+/* Main styles. */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -293,6 +282,7 @@ main div:nth-of-type(2) {
     background: rgb(20, 20, 20);
 }
 
+/* Section styles. */
 section {
     background: rgb(211, 211, 211);
     height: auto;
@@ -327,6 +317,7 @@ section hr {
     border: rgb(255, 38, 0) 4px solid;
 }
 
+/* Skill styles. */
 #spanskills {
     color: white;
     border-bottom: rgb(255, 38, 0) 8px solid;
@@ -340,6 +331,7 @@ div.skillrow {
     grid-gap: 0 4vw;
 }
 
+/* Skill bar background. */
 div.bar {
     height: 40px;
     width: 100%;
@@ -348,6 +340,7 @@ div.bar {
     margin-bottom: 20px;
 }
 
+/* Skill bars. */
 #barhtml {
     display: block;
     height: 40px;
@@ -426,6 +419,7 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
+/* Section backgrounds. */
 section:nth-of-type(2),
 section:nth-of-type(4) {
     background: url("skills.jpg");
@@ -434,6 +428,7 @@ section:nth-of-type(4) {
     background-size: cover;
 }
 
+/* Aside styles. */
 aside {
     background: rgb(34, 34, 34);
     padding: 2vw;
@@ -462,6 +457,7 @@ aside h1 {
     line-height: calc(30px + 2vw);
 }
 
+/* Aside links. */
 aside a {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -479,6 +475,7 @@ aside a:hover {
     background: rgb(7, 7, 7);
 }
 
+/* Education styles. */
 div.education {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -488,11 +485,12 @@ div.education {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-
+/* Contact styles. */
 #contact {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+/* Education school styles.. */
 div.education section.school {
     padding: 2vw 2vw;
 }
@@ -505,6 +503,7 @@ div.education section.school:nth-of-type(2) {
     background: rgb(20, 20, 20);
 }
 
+/* Education activity styles. */
 div.education#activities section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
@@ -513,6 +512,7 @@ div.education#activities section.school:nth-of-type(odd) {
     background: rgb(34, 34, 34);
 }
 
+/* Education school styles. */
 div.education#contact section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
@@ -521,6 +521,7 @@ div.education#contact section.school:nth-of-type(odd) {
     background: rgb(34, 34, 34);
 }
 
+/* Icon images above descriptions. */
 div.education#activities section.school img {
     width: calc(32px + 2vw);
     margin-bottom: 20px;
@@ -531,6 +532,7 @@ div.education#contact section.school img {
     margin-bottom: 20px;
 }
 
+/* Education school text styles. */
 div.education section.school h1 {
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -557,6 +559,7 @@ div.education section.school p {
     margin-top: 20px;
 }
 
+/* Education school span styles for GPA. */
 div.education section.school:nth-of-type(2) span {
     color: rgb(255, 38, 0);
 }
@@ -565,10 +568,12 @@ div.education section.school:nth-of-type(1) span {
     color: rgb(20, 20, 20);
 }
 
+/* Remove underline from links. */
 div.education section a {
     text-decoration: none;
 }
 
+/* Icon credit div styles. */
 div.credits {
     background: rgb(20, 20, 20);
     padding: 2vw;
@@ -593,6 +598,7 @@ div.credits a:hover {
     text-decoration: none;
 }
 
+/* Form styles. */
 form {
     margin: 0 auto;
     width: 80%;
@@ -604,6 +610,7 @@ section form h1 {
 }
 
 form input {
+    border-radius: 0;
     width: 100%;
     background: rgb(20, 20, 20);
     border: none;
@@ -618,6 +625,7 @@ form input {
 
 form input.button {
     width: 50%;
+    border-radius: 0;
 }
 
 form input:hover {
@@ -642,6 +650,7 @@ form textarea:hover {
     border-bottom: 6px rgb(255, 38, 0) solid;
 }
 
+/* Grand Canyon client styles. */
 #clientcanyon {
     padding: 6vw 0;
     background: url("Angle 1.png");
@@ -679,6 +688,7 @@ form textarea:hover {
     background: rgb(7, 7, 7);
 }
 
+/* Tablet styles. */
 @media only screen and (max-width: 768px) {
     main {
         grid-template-columns: 1fr;
@@ -716,6 +726,7 @@ form textarea:hover {
 
 }
 
+/* Small tablet styles. */
 @media only screen and (max-width: 680px) {
     main {
         grid-template-columns: 1fr;
@@ -797,6 +808,7 @@ form textarea:hover {
 
 }
 
+/* Set fixed scrolling to scroll on iOS devices. */
 @supports (-webkit-overflow-scrolling: touch) {
     section:nth-of-type(2), 
     section:nth-of-type(4), 
