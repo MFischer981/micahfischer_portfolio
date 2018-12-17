@@ -631,6 +631,9 @@ form input {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     transition: .3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 form input.button {
@@ -654,6 +657,9 @@ form textarea {
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 20px;
     transition: .3s;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 form textarea:hover {
