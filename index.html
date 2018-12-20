@@ -11,21 +11,26 @@
     <link rel="stylesheet" href="main.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
         crossorigin="anonymous"></script>
+    <title>Micah Fischer</title>
 </head>
 
 <body>
 
+    <!-- Top banner with nav and logo -->
     <div class="top">
+        <!-- Logo div with logo image. -->
         <div class="logo">
             <img src="logomicah-01.png" alt="">
         </div>
 
+        <!-- Navigation menu with links. -->
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skillset</a>
             <a href="#experience">Experience</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#contactform">Contact</a>
+            <!-- Mobile nav hidden on desktop. -->
             <div class="mobilenav">
                 <span id="menu"><img src="menu.svg" alt=""> Menu</span>
                 <a href="#about">About</a>
@@ -38,7 +43,8 @@
         </nav>
     </div>
 
-    <header id="gradient">
+    <!-- Header with name and title. -->
+    <header>
         <div></div>
         <div>
             <h1>Micah Fischer</h1>
@@ -47,13 +53,20 @@
         </div>
         <div></div>
     </header>
+
+    <!-- jQuery section divider to help with scroll on click links. -->
     <div class="linkjquerytrick" id="about"></div>
+
+    <!-- Top main about section. -->
     <section id="about">
         <h1><span>Hello.</span> I'm Micah Fischer, a student, front end web developer, and graphic designer. Good
             design is essential to making life easier for everyone.</h1>
         <hr>
     </section>
+
+    <!-- Main sub about section. -->
     <main>
+        <!-- Div with background of my photo. -->
         <div>
         </div>
         <div>
@@ -66,10 +79,16 @@
                 forward to building a meaningful career in the feild of Web Developement and Design. </p>
         </div>
     </main>
+
+    <!-- jQuery section divider to help with scroll on click links. -->
     <div class="linkjquerytrick" id="skills"></div>
+
+    <!-- Skill section -->
     <section>
         <h1><span id="spanskills">Web Developement & Design <span>Skills</span></span></h1>
         <div class="skillrow">
+
+            <!-- Bar divs with nested divs to show skill progress. -->
             <div>
                 <p>HTML</p>
                 <div class="bar">
@@ -150,9 +169,14 @@
         </div>
     </section>
 
+    <!-- jQuery section divider to help with scroll on click links. -->
     <div class="linkjquerytrick" id="experience"></div>
+
+    <!-- Education div with school sections. -->
     <div class="education">
+        <!-- Section for school -->
         <section class="school">
+            <!-- h1 with school span with GPA and h4 with years. -->
             <h1>Shadow Ridge High School <span>3.958 GPA</span></h1>
             <h4>2016-2020</h4>
             <p>While taking general classes I took Digital Communcation classes where I learned industry software such
@@ -160,7 +184,9 @@
                 Graphic Design at the regional and state level. I was a member of the Photography Club and played JV
                 and Varsity Tennis.</p>
         </section>
+        <!-- Section for school -->
         <section class="school">
+            <!-- h1 with school span with GPA and h4 with years. -->
             <h1>WestMEC Coding <span>4.0 GPA</span></h1>
             <h4>2018-2020</h4>
             <p>While at WestMEC I learned HTML, CSS, JavaScript, jQuery, Bootstrap, and PHP from skilled instructors. I
@@ -170,6 +196,7 @@
         </section>
     </div>
 
+    <!-- Div with activities. Section to divide individual activities. Images and h1/h4 tags with activity and years. -->
     <div class="education" id="activities">
         <section class="school">
             <img src="tennis-ball.svg" alt="">
@@ -203,23 +230,32 @@
         </section>
     </div>
 
+    <!-- Resume download. -->
     <aside>
         <h1>Download My Resume</h1>
         <a href="Micah Fischer Resume.pdf" download>Download</a>
     </aside>
 
+    <!-- jQuery section divider to help with scroll on click links. -->
     <div class="linkjquerytrick" id="portfolio"></div>
+
+    <!-- Grand canyon client with logo, description and link to site. -->
     <section id="clientcanyon">
         <img src="canyonlogo-01.png" alt="">
         <p>AZ Safari Camp</p>
         <a href="https://micahfischer.github.io/AZCampSafari/">Visit Site</a>
     </section>
 
+    <!-- jQuery section divider to help with scroll on click links. -->
     <div class="linkjquerytrick" id="contactform"></div>
+
+    <!-- Section for form. -->
     <section>
+        <!-- H1 title with span to highlight text. -->
         <h1>
             <span id="spanskills">Say <span>Hello.</span></span>
         </h1>
+        <!-- Form connected to mail.php. -->
         <form action="contact.php" method="POST">
             <p>Name</p> <input type="text" name="name">
             <p>Email</p> <input type="text" name="email">
@@ -230,44 +266,41 @@
         </form>
     </section>
 
+    <!-- Section for contact info. -->
     <div class="education" id="contact">
-       
-            <section class="school">
+
+        <!-- Phone number linked with icon. -->
+        <section class="school">
             <a href="tel:16238107236">
                 <img src="phone-receiver.svg" alt="">
                 <h1>Call/Text</h1>
                 <h4>623-810-7236</h4>
             </a>
-            </section>
-        
+        </section>
 
-       
-            <section class="school">
+        <!-- Instagram account linked with icon. -->
+        <section class="school">
             <a href="https://www.instagram.com/micahefischer/">
                 <img src="instagram-logo.svg" alt="">
                 <h1>Instagam</h1>
                 <h4>@micahefischer</h4>
             </a>
-            </section>
-        
-      
-      
-            <section class="school">
+        </section>
+
+        <!-- Email linked with icon. -->
+        <section class="school">
             <a href="mailto:micahefish@gmail.com">
                 <img src="envelope.svg" alt="">
                 <h1>Email</h1>
                 <h4>micahefish@<br>gmail.com</h4>
             </a>
-            </section>
-        
-        
+        </section>
 
     </div>
 
-
+    <!-- Credits for icons. Divs with links to icon author pages. -->
     <div class="credits">
         Website Design by Micah Fischer © Micah Fischer 2018 All Rights Reserved
-
         <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from
             <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
@@ -289,10 +322,7 @@
                 title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     </div>
 
-
-
-
-
+    <!-- JS file linked. -->
     <script src="main.js"></script>
 </body>
 

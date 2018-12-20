@@ -1,3 +1,4 @@
+// Grow top logo on scroll to top of page.
 $(window).scroll(function () {
     if ($(this).scrollTop() < 450) {
         $('div.logo img').css({
@@ -6,6 +7,7 @@ $(window).scroll(function () {
     }
 });
 
+// Shrink top logo on scroll below top of page.
 $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
         $('div.logo img').css({
@@ -13,11 +15,3 @@ $(window).scroll(function () {
         });
     }
 });
-
-
-
-
-
-
-
-

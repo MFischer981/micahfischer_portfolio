@@ -158,24 +158,27 @@ body {
     background-color: rgb(255, 38, 0);
 }
 
-/* Top Navigation styles and logo styles. */
+/* Top Navigation styles and logo styles. Top banner set to z-index of 1000 and position of sticky at top of page. */
 div.top {
     position: sticky;
     top: 0;
     z-index: 1000;
 }
 
+/* Div with padding of 20px and dark grey background. */
 div.logo {
     padding: 20px;
     background: rgb(7, 7, 7);
 }
 
+/* Image displayed as block with transition of .1 seconds. Height of 60px. */
 div.logo img {
     display: block;
     transition: .1s;
     height: 60px;
 }
 
+/* Font styles for div.logo h1. */
 div.logo h1 {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
@@ -185,6 +188,8 @@ div.logo h1 {
 }
 
 /* Header styles */
+
+/* Header set to orange background with height of 600px. Display as grid with 3 rows. Transition of 1s. */
 header {
     background: rgb(255, 38, 0);
     height: 600px;
@@ -193,6 +198,7 @@ header {
     transition: 1s;
 }
 
+/* Header h1 font, width and margins styles. Center aligned. */
 header h1 {
     font-family: 'Roboto Slab', serif;
     color: white;
@@ -203,6 +209,7 @@ header h1 {
     transition: 1s;
 }
 
+/* Header horizontal rule width, margin and color styles. */
 header hr {
     width: 40%;
     margin: 10px auto;
@@ -211,6 +218,7 @@ header hr {
     border: white 2px solid;
 }
 
+/* Header h4 font, width and margins styles. Center aligned. */
 header h4 {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -236,6 +244,7 @@ nav div.mobilenav a {
     display: none;
 }
 
+/* Navigation link font and padding styles. Center aligned. Transition for hover. */
 nav a {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -246,6 +255,7 @@ nav a {
     transition: .1s;
 }
 
+/* Nav hover styles. */
 nav a:hover {
     background: rgb(255, 38, 0);
 }
@@ -264,6 +274,7 @@ main {
     grid-template-columns: 1fr 1fr;
 }
 
+/* Main h1 font styles. Padding set. */
 main h1 {
     font-family: 'Roboto Slab', serif;
     color: white;
@@ -271,6 +282,7 @@ main h1 {
     padding-bottom: 40px;
 }
 
+/* Main p font and line spacing styles. */
 main p {
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -278,21 +290,26 @@ main p {
     line-height: calc(22px + 1vw);
 }
 
+/* Main div padding. */
 main div {
     padding: 4vw 2vw;
 }
 
+/* First div with photo of Micah. */
 main div:nth-of-type(1) {
     background: url("micah.jpg");
     background-size: cover;
     background-position: center center;
 }
 
+/* Second div with dark grey background. */
 main div:nth-of-type(2) {
     background: rgb(20, 20, 20);
 }
 
 /* Section styles. */
+
+/* Section height and display styles. Padding and background color applied. */
 section {
     background: rgb(211, 211, 211);
     height: auto;
@@ -300,6 +317,7 @@ section {
     padding: 6vw 0;
 }
 
+/* Section h1 font styles, width and margin set. */
 section h1 {
     font-family: 'Montserrat', sans-serif;
     color: rgb(20, 20, 20);
@@ -309,17 +327,20 @@ section h1 {
     margin: 0 auto 40px;
 }
 
+/* Section p font styles. */
 section p {
     font-family: 'Roboto Slab', serif;
     color: white;
     font-size: calc(22px + 1vw);
 }
 
+/* Section h1 span color and font weight. */
 section h1 span {
     color: rgb(255, 38, 0);
     font-weight: bold;
 }
 
+/* Section hr margin, width, display, and border. */
 section hr {
     margin: 20px 0 0;
     width: 40%;
@@ -328,11 +349,14 @@ section hr {
 }
 
 /* Skill styles. */
+
+/* ID of spanskills color and border. */
 #spanskills {
     color: white;
     border-bottom: rgb(255, 38, 0) 8px solid;
 }
 
+/* Div for skills bars. Centered, width of 80%, two rows. Grid gap of 4vw on left and right. */
 div.skillrow {
     margin: 0 auto;
     width: 80%;
@@ -350,13 +374,12 @@ div.bar {
     margin-bottom: 20px;
 }
 
-/* Skill bars. */
+/* Skill bars with display of block, height of 40px, width set to % of skill level. Background set to orange. */
 #barhtml {
     display: block;
     height: 40px;
     width: 90%;
     background: rgb(255, 38, 0);
-    transition: 6s;
 }
 
 #barcss {
@@ -429,7 +452,7 @@ div.bar {
     background: rgb(255, 38, 0);
 }
 
-/* Section backgrounds. */
+/* Section background set, fixed background set to size of cover. */
 section:nth-of-type(2),
 section:nth-of-type(4) {
     background: url("skills.jpg");
@@ -439,26 +462,30 @@ section:nth-of-type(4) {
 }
 
 /* Aside styles. */
+
+/* Aside background and padding set. */
 aside {
     background: rgb(34, 34, 34);
     padding: 2vw;
 }
 
+/* Aside with class of main set to padding of 0. */
 aside.main {
     padding: 0;
 }
 
+/* Aside with class of main h1 background set. Fixed background set to size cover. Padding, font size and line height. */
 aside.main h1 {
     background: url("micahskills.jpg");
     background-attachment: fixed;
     -webkit-background-attachment: fixed;
     background-size: cover;
-    filter: grayscale(100%);
     padding: 4vw 2vw 2vw;
     font-size: calc(26px + 2.6vw);
     line-height: calc(30px + 3vw);
 }
 
+/* Aside h1 font styles. */
 aside h1 {
     font-family: 'Roboto Slab', serif;
     text-align: center;
@@ -467,7 +494,7 @@ aside h1 {
     line-height: calc(30px + 2vw);
 }
 
-/* Aside links. */
+/* Aside links font and display styles. Margin and padding set. Width set, background set to orange. */
 aside a {
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -481,30 +508,36 @@ aside a {
     width: 30%;
 }
 
+/* Aside link hover background set to dark grey. */
 aside a:hover {
     background: rgb(7, 7, 7);
 }
 
 /* Education styles. */
+/* Div.education grid of 2 columns.*/
 div.education {
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
+/* ID of activities set to grid of 3 columns */
 #activities {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Contact styles. */
+/* ID of contact set to grid of 3 columns */
 #contact {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/* Education school styles.. */
+/* Education school styles. */
+
+/* Sets div.education and section.school to padding of 2vw. */
 div.education section.school {
-    padding: 2vw 2vw;
+    padding: 2vw;
 }
 
+/* Alternating background colors for sections. */
 div.education section.school:nth-of-type(1) {
     background: rgb(255, 38, 0);
 }
@@ -514,6 +547,8 @@ div.education section.school:nth-of-type(2) {
 }
 
 /* Education activity styles. */
+
+/* Alternating background colors for activities. */
 div.education#activities section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
@@ -523,6 +558,8 @@ div.education#activities section.school:nth-of-type(odd) {
 }
 
 /* Education school styles. */
+
+/* Alternating background colors for contact info. */
 div.education#contact section.school:nth-of-type(even) {
     background: rgb(44, 44, 44);
 }
@@ -531,7 +568,7 @@ div.education#contact section.school:nth-of-type(odd) {
     background: rgb(34, 34, 34);
 }
 
-/* Icon images above descriptions. */
+/* Icon images above descriptions, with bottom margin of 20px. */
 div.education#activities section.school img {
     width: calc(32px + 2vw);
     margin-bottom: 20px;
@@ -543,6 +580,8 @@ div.education#contact section.school img {
 }
 
 /* Education school text styles. */
+
+/* Width, font and color styles applied to h1 in div.education. */
 div.education section.school h1 {
     width: 100%;
     font-family: 'Roboto Slab', serif;
@@ -552,6 +591,7 @@ div.education section.school h1 {
     margin-bottom: 12px;
 }
 
+/* Width, font and color styles applied to h4 in div.education. */
 div.education section.school h4 {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -560,6 +600,7 @@ div.education section.school h4 {
     font-size: calc(18px + .8vw);
 }
 
+/* Width, font and color styles applied to p in div.education. */
 div.education section.school p {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
@@ -569,7 +610,7 @@ div.education section.school p {
     margin-top: 20px;
 }
 
-/* Education school span styles for GPA. */
+/* Education school span styles for GPA in alternate colors. */
 div.education section.school:nth-of-type(2) span {
     color: rgb(255, 38, 0);
 }
@@ -578,12 +619,14 @@ div.education section.school:nth-of-type(1) span {
     color: rgb(20, 20, 20);
 }
 
-/* Remove underline from links. */
+/* Remove underline from links in education section.*/
 div.education section a {
     text-decoration: none;
 }
 
 /* Icon credit div styles. */
+
+/* Div credit background and padding set. Font styles applied. */
 div.credits {
     background: rgb(20, 20, 20);
     padding: 2vw;
@@ -594,6 +637,7 @@ div.credits {
     text-align: center;
 }
 
+/* Div credit link styles. */
 div.credits a {
     background: rgb(34, 34, 34);
     padding: 2px 12px;
@@ -603,22 +647,27 @@ div.credits a {
     transition: .1s;
 }
 
+/* Div credit link hover styles. */
 div.credits a:hover {
     background: rgb(44, 44, 44);
     text-decoration: none;
 }
 
 /* Form styles. */
+
+/* Form styles, width set to 80%, display as block, centered in margins. */
 form {
     margin: 0 auto;
     width: 80%;
     display: block;
 }
 
+/* Section form h1 styles. */
 section form h1 {
     color: white;
 }
 
+/* Form input font, border, padding and width styles. Transition for hover. Box sizing set to border box. */
 form input {
     border-radius: 0;
     width: 100%;
@@ -636,15 +685,21 @@ form input {
     -webkit-box-sizing: border-box;
 }
 
+/* Form input with class of buttons set to 50% width. Appearance set to none in order to overwrite iOS default button styles. */
 form input.button {
     width: 50%;
     border-radius: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
+/* Form input hover changes border color. */
 form input:hover {
     border-bottom: 6px rgb(255, 38, 0) solid;
 }
 
+/* Form text area with styles matching input. */
 form textarea {
     resize: none;
     width: 100%;
@@ -665,11 +720,14 @@ form textarea {
     appearance: none;
 }
 
+/* Text area hover changes border color. */
 form textarea:hover {
     border-bottom: 6px rgb(255, 38, 0) solid;
 }
 
 /* Grand Canyon client styles. */
+
+/* Client section background and padding set. Fixed, centered background set. */
 #clientcanyon {
     padding: 6vw 0;
     background: url("Angle 1.png");
@@ -679,10 +737,12 @@ form textarea:hover {
     background-position: center center;
 }
 
+/* Centered paragraphs. */
 #clientcanyon p {
     text-align: center;
 }
 
+/* Image display styles set. */
 #clientcanyon img {
     display: block;
     margin: 0 auto;
@@ -690,33 +750,39 @@ form textarea:hover {
     padding: 20px
 }
 
+/* Client link with matching styles. */
 #clientcanyon a {
-        font-family: 'Montserrat', sans-serif;
-        text-align: center;
-        color: white;
-        font-size: calc(16px + 1.6vw);
-        display: block;
-        margin: 20px auto;
-        text-decoration: none;
-        background: rgb(255, 38, 0);
-        padding: 10px;
-        width: 30%;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: white;
+    font-size: calc(16px + 1.6vw);
+    display: block;
+    margin: 20px auto;
+    text-decoration: none;
+    background: rgb(255, 38, 0);
+    padding: 10px;
+    width: 30%;
 }
 
+/* Client link hover changes background color. */
 #clientcanyon a:hover {
     background: rgb(7, 7, 7);
 }
 
 /* Tablet styles. */
 @media only screen and (max-width: 768px) {
+
+    /* 1 column main for tablets. */
     main {
         grid-template-columns: 1fr;
     }
 
+    /* Set first div height to 400px. */
     main div:first-of-type {
         height: 400px;
     }
 
+    /* Less columns for smaller devices. */
     div.skillrow {
         grid-template-columns: 1fr;
     }
@@ -735,6 +801,7 @@ form textarea:hover {
     }
 
 
+    /* Less padding for smaller devices. */
     div.education section.school {
         padding: 4vw 4vw;
     }
@@ -747,14 +814,8 @@ form textarea:hover {
 
 /* Small tablet styles. */
 @media only screen and (max-width: 680px) {
-    main {
-        grid-template-columns: 1fr;
-    }
 
-    main div:first-of-type {
-        height: 400px;
-    }
-
+    /* Even fewer columns. */
     div.skillrow {
         grid-template-columns: 1fr;
     }
@@ -777,6 +838,7 @@ form textarea:hover {
         padding: 4vw 4vw;
     }
 
+    /* Show menu span for mobile menu. */
     nav span#menu {
         display: block;
     }
@@ -818,6 +880,7 @@ form textarea:hover {
         font-size: 24px;
     }
 
+    /* Larger image for client section. */
     #clientcanyon img {
         display: block;
         margin: 0 auto;
@@ -829,32 +892,21 @@ form textarea:hover {
 
 /* Set fixed scrolling to scroll on iOS devices. */
 @supports (-webkit-overflow-scrolling: touch) {
-    section:nth-of-type(2), 
-    section:nth-of-type(4), 
-    aside.main h1,
-    section#clientcanyon {
-        background-attachment: scroll;
-    }
-  }
-  
-  @supports not (-webkit-overflow-scrolling: touch) {
-    section:nth-of-type(2), 
-    section:nth-of-type(4), 
-    aside.main h1,
-    section#clientcanyon {
-        background-attachment: fixed;
-    }
-  }
 
-/* Set fixed scrolling to scroll on iOS devices. */
-@supports (-webkit-overflow-scrolling: touch) {
-   * {
+    section:nth-of-type(2),
+    section:nth-of-type(4),
+    aside.main h1,
+    section#clientcanyon {
         background-attachment: scroll;
     }
-  }
-  
-  @supports not (-webkit-overflow-scrolling: touch) {
-    * {
+}
+
+@supports not (-webkit-overflow-scrolling: touch) {
+
+    section:nth-of-type(2),
+    section:nth-of-type(4),
+    aside.main h1,
+    section#clientcanyon {
         background-attachment: fixed;
     }
-  }
+}
