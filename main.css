@@ -195,7 +195,6 @@ header {
     height: 600px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
-    transition: 1s;
 }
 
 /* Header h1 font, width and margins styles. Center aligned. */
@@ -206,7 +205,6 @@ header h1 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    transition: 1s;
 }
 
 /* Header horizontal rule width, margin and color styles. */
@@ -723,6 +721,38 @@ form textarea {
 /* Text area hover changes border color. */
 form textarea:hover {
     border-bottom: 6px rgb(255, 38, 0) solid;
+}
+
+
+#topBtn {
+    transition: .2s;
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Fixed/sticky position */
+    bottom: 0;
+    /* Place the button at the bottom of the page */
+    right: 0;
+    /* Place the button 30px from the right */
+    z-index: 99;
+    /* Make sure it does not overlap */
+    border: none;
+    /* Remove borders */
+    outline: none;
+    /* Remove outline */
+    background-color: rgb(20, 20, 20);
+    /* Set a background color */
+    color: white;
+    /* Text color */
+    padding: 15px;
+    /* Some padding */
+    font-size: 18px;
+    /* Increase font size */
+}
+
+#topBtn:hover {
+    background-color: #555;
+    /* Add a dark-grey background on hover */
 }
 
 /* Grand Canyon client styles. */
