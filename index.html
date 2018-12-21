@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
         crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
     <title>Micah Fischer</title>
 </head>
 
 <body>
-    <button onclick="topFunction()" id="topBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+    <button onclick="topFunction()" id="topBtn" title="Go To Top"><i class="fas fa-chevron-up"></i></button>
     <!-- Top banner with nav and logo -->
     <div class="top">
         <!-- Logo div with logo image. -->
@@ -58,14 +58,14 @@
     <div class="linkjquerytrick" id="about"></div>
 
     <!-- Top main about section. -->
-    <section id="about">
+    <section id="about" data-aos="fade-left">
         <h1><span>Hello.</span> I'm Micah Fischer, a student, front end web developer, and graphic designer. Good
             design is essential to making life easier for everyone.</h1>
         <hr>
     </section>
 
     <!-- Main sub about section. -->
-    <main>
+    <main data-aos="fade-right">
         <!-- Div with background of my photo. -->
         <div>
         </div>
@@ -84,7 +84,7 @@
     <div class="linkjquerytrick" id="skills"></div>
 
     <!-- Skill section -->
-    <section>
+    <section data-aos="fade-left">
         <h1><span id="spanskills">Web Developement & Design <span>Skills</span></span></h1>
         <div class="skillrow">
 
@@ -175,7 +175,7 @@
     <!-- Education div with school sections. -->
     <div class="education">
         <!-- Section for school -->
-        <section class="school">
+        <section class="school" data-aos="fade-right">
             <!-- h1 with school span with GPA and h4 with years. -->
             <h1>Shadow Ridge High School <span>3.958 GPA</span></h1>
             <h4>2016-2020</h4>
@@ -185,7 +185,7 @@
                 and Varsity Tennis.</p>
         </section>
         <!-- Section for school -->
-        <section class="school">
+        <section class="school" data-aos="fade-left">
             <!-- h1 with school span with GPA and h4 with years. -->
             <h1>WestMEC Coding <span>4.0 GPA</span></h1>
             <h4>2018-2020</h4>
@@ -198,21 +198,21 @@
 
     <!-- Div with activities. Section to divide individual activities. Images and h1/h4 tags with activity and years. -->
     <div class="education" id="activities">
-        <section class="school">
+        <section class="school" data-aos="fade-up">
             <img src="tennis-ball.svg" alt="">
             <h1>Shadow Ridge Varsity/JV Tennis</h1>
             <h4>2016-2017</h4>
             <p>Built strong teamwork and leadership skills as a member of the tennis team. Was a committed member of
                 the team for a year and a half.</p>
         </section>
-        <section class="school">
+        <section class="school"  data-aos="fade-up">
             <img src="photo-camera.svg" alt="">
             <h1>Shadow Ridge Photography Club</h1>
             <h4>2016-2017</h4>
             <p>Learned essentail photography skills and editing skills. Explored industry software such as Adobe
                 Photoshop and Lightroom. Acted as a yearbook photographer for football.</p>
         </section>
-        <section class="school">
+        <section class="school" data-aos="fade-up">
             <img src="medal.svg" alt="">
             <h1>SkillsUSA Member</h1>
             <h4>2017-2018</h4>
@@ -220,21 +220,21 @@
                 in Graphic Design at regionals. Was nominated for Pin Design and T-Shirt Design at the state level.
             </p>
         </section>
-        <section class="school">
+        <section class="school"  data-aos="fade-up">
             <img src="medal.svg" alt="">
             <h1>FBLA Member/VP of Committees</h1>
             <h4>2018-Present</h4>
             <p>Was an active member and officer of the WestMEC FBLA chapter. As VP of Committees I helped organize and
                 plan events for the chapter and its members. I also helped prepare our chapter to compete in regionals.</p>
         </section>
-        <section class="school">
+        <section class="school" data-aos="fade-up">
             <img src="programming-code.svg" alt="">
             <h1>WestMEC Coding Intership Program Developer</h1>
             <h4>2018-Present</h4>
             <p>Developed websites for internship clients and learned to use industry standard Project Management tools.
                 Work with other developers and developed version control skills.</p>
         </section>
-        <section class="school">
+        <section class="school" data-aos="fade-up">
             <img src="heart.svg" alt="">
             <h1>Desert Springs Community Church Assistant</h1>
             <h4>2016-Present</h4>
@@ -244,7 +244,7 @@
     </div>
 
     <!-- Resume download. -->
-    <aside>
+    <aside  data-aos="fade-right">
         <h1>Download My Resume</h1>
         <a href="Micah Fischer Resume.pdf" download>Download</a>
     </aside>
@@ -253,7 +253,7 @@
     <div class="linkjquerytrick" id="portfolio"></div>
 
     <!-- Grand canyon client with logo, description and link to site. -->
-    <section id="clientcanyon">
+    <section id="clientcanyon"  data-aos="fade-left">
         <img src="canyonlogo-01.png" alt="">
         <p>AZ Safari Camp</p>
         <a href="https://micahfischer.github.io/AZCampSafari/">Visit Site</a>
@@ -263,7 +263,7 @@
     <div class="linkjquerytrick" id="contactform"></div>
 
     <!-- Section for form. -->
-    <section>
+    <section  data-aos="fade-right">
         <!-- H1 title with span to highlight text. -->
         <h1>
             <span id="spanskills">Say <span>Hello.</span></span>
@@ -280,7 +280,7 @@
     </section>
 
     <!-- Section for contact info. -->
-    <div class="education" id="contact">
+    <div class="education" id="contact" data-aos="fade-up">
 
         <!-- Phone number linked with icon. -->
         <section class="school">
@@ -337,6 +337,12 @@
 
     <!-- JS file linked. -->
     <script src="main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

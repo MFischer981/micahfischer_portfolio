@@ -155,7 +155,8 @@ img {
 
 /* Body styles */
 body {
-    background-color: rgb(255, 38, 0);
+    background-color: rgb(20, 20, 20);
+    overflow-x: hidden;
 }
 
 /* Top Navigation styles and logo styles. Top banner set to z-index of 1000 and position of sticky at top of page. */
@@ -163,6 +164,11 @@ div.top {
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: 1s;
+}
+
+div.top:hover {
+    top: 0;
 }
 
 /* Div with padding of 20px and dark grey background. */
@@ -748,6 +754,7 @@ form textarea:hover {
     /* Some padding */
     font-size: 18px;
     /* Increase font size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 #topBtn:hover {
