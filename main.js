@@ -1,3 +1,11 @@
+// Shrink top logo on scroll below top of page.
+$(window).scroll(function () {
+    if ($(this).scrollTop() > 0) {
+        $('div.logo img').css({
+            'transform': "scale(.8) translateX(-20px)",
+        });
+    }
+});
 // Grow top logo on scroll to top of page.
 $(window).scroll(function () {
     if ($(this).scrollTop() < 450) {
@@ -7,30 +15,23 @@ $(window).scroll(function () {
     }
 });
 
+
+
+// Grow top logo on scroll to top of page.
+$(window).scroll(function () {
+    if ($(this).scrollTop() < 100) {
+        $('header').css({
+            'background-position' : 'center top',
+        });
+    }
+});
 // Shrink top logo on scroll below top of page.
 $(window).scroll(function () {
     if ($(this).scrollTop() > 0) {
-        $('div.logo img').css({
-            'transform': "scale(.8) translateX(-20px)",
+        $('header').css({
+            'background-position' : 'center bottom',
         });
     }
 });
 
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-    scrollFunction()
-};
 
-function scrollFunction() {
-    if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
-        document.getElementById("topBtn").style.display = "block";
-    } else {
-        document.getElementById("topBtn").style.display = "none";
-    }
-}
-
-// When the user clicks on the button, scroll to the top of the document
-function topFunction() {
-    document.body.scrollTop = 0; // For Safari
-    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-}

@@ -197,11 +197,18 @@ div.logo h1 {
 
 /* Header set to orange background with height of 600px. Display as grid with 3 rows. Transition of 1s. */
 header {
-    background: rgb(255, 38, 0);
-    height: 600px;
+    background: url(bartop2.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 800px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    transition: 4s;
 }
+
+
 
 /* Header h1 font, width and margins styles. Center aligned. */
 header h1 {
@@ -211,6 +218,7 @@ header h1 {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Header horizontal rule width, margin and color styles. */
@@ -220,16 +228,20 @@ header hr {
     color: white;
     display: block;
     border: white 2px solid;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Header h4 font, width and margins styles. Center aligned. */
 header h4 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
     color: white;
-    font-size: calc(22px + 1vw);
+    font-size: calc(20px + .8vw);
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Navigation styles */
@@ -261,7 +273,7 @@ nav a {
 
 /* Nav hover styles. */
 nav a:hover {
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 /* Sets position above in order to account for sticky nav links. */
@@ -271,6 +283,7 @@ div.linkjquerytrick {
     float: left;
     height: 0;
 }
+
 
 /* Main styles. */
 main {
@@ -340,7 +353,7 @@ section p {
 
 /* Section h1 span color and font weight. */
 section h1 span {
-    color: rgb(255, 38, 0);
+    color: rgb(45, 170, 153);
     font-weight: bold;
 }
 
@@ -349,7 +362,7 @@ section hr {
     margin: 20px 0 0;
     width: 40%;
     display: block;
-    border: rgb(255, 38, 0) 4px solid;
+    border: rgb(45, 170, 153) 4px solid;
 }
 
 /* Skill styles. */
@@ -357,7 +370,7 @@ section hr {
 /* ID of spanskills color and border. */
 #spanskills {
     color: white;
-    border-bottom: rgb(255, 38, 0) 8px solid;
+    border-bottom: rgb(45, 170, 153) 8px solid;
 }
 
 /* Div for skills bars. Centered, width of 80%, two rows. Grid gap of 4vw on left and right. */
@@ -383,77 +396,77 @@ div.bar {
     display: block;
     height: 40px;
     width: 90%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barcss {
     display: block;
     height: 40px;
     width: 80%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barjs {
     display: block;
     height: 40px;
     width: 30%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barjquery {
     display: block;
     height: 40px;
     width: 40%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barbootstrap {
     display: block;
     height: 40px;
     width: 90%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barphp {
     display: block;
     height: 40px;
     width: 20%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barps {
     display: block;
     height: 40px;
     width: 90%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barai {
     display: block;
     height: 40px;
     width: 80%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barind {
     display: block;
     height: 40px;
     width: 80%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barppro {
     display: block;
     height: 40px;
     width: 90%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 #barae {
     display: block;
     height: 40px;
     width: 80%;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 /* Section background set, fixed background set to size of cover. */
@@ -507,7 +520,7 @@ aside a {
     display: block;
     margin: 20px auto;
     text-decoration: none;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
     padding: 10px;
     width: 30%;
 }
@@ -543,7 +556,7 @@ div.education section.school {
 
 /* Alternating background colors for sections. */
 div.education section.school:nth-of-type(1) {
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
 }
 
 div.education section.school:nth-of-type(2) {
@@ -616,7 +629,7 @@ div.education section.school p {
 
 /* Education school span styles for GPA in alternate colors. */
 div.education section.school:nth-of-type(2) span {
-    color: rgb(255, 38, 0);
+    color: rgb(45, 170, 153);
 }
 
 div.education section.school:nth-of-type(1) span {
@@ -700,7 +713,7 @@ form input.button {
 
 /* Form input hover changes border color. */
 form input:hover {
-    border-bottom: 6px rgb(255, 38, 0) solid;
+    border-bottom: 6px rgb(45, 170, 153) solid;
 }
 
 /* Form text area with styles matching input. */
@@ -726,40 +739,7 @@ form textarea {
 
 /* Text area hover changes border color. */
 form textarea:hover {
-    border-bottom: 6px rgb(255, 38, 0) solid;
-}
-
-
-#topBtn {
-    transition: .2s;
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Fixed/sticky position */
-    bottom: 0;
-    /* Place the button at the bottom of the page */
-    right: 0;
-    /* Place the button 30px from the right */
-    z-index: 99;
-    /* Make sure it does not overlap */
-    border: none;
-    /* Remove borders */
-    outline: none;
-    /* Remove outline */
-    background-color: rgb(20, 20, 20);
-    /* Set a background color */
-    color: white;
-    /* Text color */
-    padding: 15px;
-    /* Some padding */
-    font-size: 18px;
-    /* Increase font size */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-#topBtn:hover {
-    background-color: #555;
-    /* Add a dark-grey background on hover */
+    border-bottom: 6px rgb(45, 170, 153) solid;
 }
 
 /* Grand Canyon client styles. */
@@ -796,7 +776,7 @@ form textarea:hover {
     display: block;
     margin: 20px auto;
     text-decoration: none;
-    background: rgb(255, 38, 0);
+    background: rgb(45, 170, 153);
     padding: 10px;
     width: 30%;
 }
@@ -895,7 +875,7 @@ form textarea:hover {
     }
 
     nav span#menu:hover {
-        background: rgb(255, 38, 0);
+        background: rgb(45, 170, 153);
     }
 
     nav div.mobilenav {
@@ -929,7 +909,7 @@ form textarea:hover {
 
 /* Set fixed scrolling to scroll on iOS devices. */
 @supports (-webkit-overflow-scrolling: touch) {
-
+    header,
     section:nth-of-type(2),
     section:nth-of-type(4),
     aside.main h1,
@@ -939,7 +919,7 @@ form textarea:hover {
 }
 
 @supports not (-webkit-overflow-scrolling: touch) {
-
+    header,
     section:nth-of-type(2),
     section:nth-of-type(4),
     aside.main h1,
